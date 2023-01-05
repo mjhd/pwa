@@ -1,0 +1,401 @@
+<?
+
+?>
+<!doctype html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,minimal-ui">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv='Expires' content='0'>
+    <meta http-equiv='x-dns-prefetch-control' content='off'>
+
+    <title>web3_webapp</title>
+
+    <link rel="base" href="./" />
+    <link rel="canonical" href="./" />
+    <link rel="amphtml" href="./?amp=1" />
+    <link rel="index" href="./">
+    <link rel="self" type="application/atom+xml" href="./">
+    <link rel="bookmark" title="web3_webapp" href="./">
+
+
+    <script type="application/ld+json">
+      {
+       "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "web3_webapp",
+        "operatingSystem": "cross-platform",
+        "applicationCategory": "FinanceApplication",
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "",
+          "ratingCount": ""
+      },
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        }
+      }
+    </script>
+
+    <meta itemprop="name" content="web3_webapp">
+    <meta itemprop="description" content="Web 3.0 PWA boilerplate">
+    <meta itemprop="image" content="./?icon_svg">
+    <link rel="shortcut icon" type="image/svg+xml" sizes="192x192" href="data:image/svg+xml;base64,PCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj48c3ZnIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCAxMDAwIDEwMDAiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDEwMDAgMTAwMCIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PG1ldGFkYXRhPiBTdmcgVmVjdG9yIEljb25zIDogaHR0cDovL3d3dy5vbmxpbmV3ZWJmb250cy5jb20vaWNvbiA8L21ldGFkYXRhPjxnPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAuMDAwMDAwLDUxMS4wMDAwMDApIHNjYWxlKDAuMTAwMDAwLC0wLjEwMDAwMCkiPjxwYXRoIGQ9Ik05MzQ0LjgsMzUyMy40Yy0xMDEuOS02Ny4zLTEyMS4xLTE1MS45LTczLjEtMzI0LjljMTQ0LjItNTI2LjcsMTkyLjItODY4LjksMTkyLjItMTM3MC43YzAtNjc0LjgtMTE1LjMtMTIzOS45LTM3OC43LTE4NzAuNWMtNDU5LjUtMTA5Ny43LTEzODIuMi0yMDIwLjQtMjQ4OS41LTI0OTEuNGMtMTc4NC03NTcuNC0zODM3LjEtMzU5LjUtNTIwOS43LDEwMDcuM2MtMzMwLjYsMzI4LjgtNTg4LjMsNjY5LTc5NS45LDEwNDcuN2MtOTIuMywxNjkuMi0xMzQuNiwyMTcuMi0yMTUuMywyMzguNEMyMzguNC0yMDIuMiwxMDAtMjk4LjMsMTAwLTQzMWMwLTYxLjUsMTM4LjQtMzE3LjIsMzE1LjMtNTg2LjNjNzk0LTEyMDMuNCwyMDM3LjctMjAxMi44LDM0NzEuOS0yMjU2LjljMTYxOC43LTI3Ni44LDMzMTAuNCwyNjEuNSw0NDc3LjMsMTQyMC43Qzk2NzMuNS01NTAuMiwxMDE5Mi42LDEzMjAuMyw5NzM4LjksMzExMmMtNzYuOSwzMDUuNy0xMTUuNCwzOTAuMi0xODguNCw0MjQuOEM5NDYyLjEsMzU3OS4xLDk0MjEuNywzNTc1LjMsOTM0NC44LDM1MjMuNHoiLz48cGF0aCBkPSJNODM0Ny4xLDMxMTcuOGMtMjc4LjgtMTA3LjctMjc3OS44LTExNTMuNC0yODE4LjItMTE3Ni41Yy0xMDAtNjcuMy03OC44LTE5Mi4yLDQ0LjItMjUzLjhjNDAuNC0yMS4xLDY5Mi4xLTI5NC4xLDE0NDkuNS02MDcuNWMxNDk1LjYtNjE5LDE0NzAuNi02MTEuMywxNjQzLjctNTMyLjVjMTQyLjMsNjUuNCwxODQuNiwxNTMuOCwyNTkuNSw1NDkuOGM1MCwyNjUuMyw3MS4xLDg4Ni4yLDM4LjQsMTE4MC4zYy0yOC44LDI2OS4xLTkyLjMsNTcxLTEzOC40LDY2Ny4xYy01NS43LDExNS4zLTE2NS4zLDE4Ni41LTMwMS44LDE5NC4yQzg0NjQuMywzMTQwLjgsODM4My42LDMxMzMuMSw4MzQ3LjEsMzExNy44eiIvPjxwYXRoIGQ9Ik0yNjI5LjksNzUzLjJDMTgwNy4xLDQxMSwxMjAxLjUsMTQ5LjYsMTE2My4xLDExNi45Yy05Mi4zLTczLjEtMTQ4LTIwMS45LTEzNi41LTMxOS4xYzI1LTI1Ny42LDY1My42LTEwMDkuMywxMTQ5LjYtMTM3NC41YzM2NS4zLTI3MS4xLDQ4NC40LTMyNC45LDY0NC0yOTIuMmM4OC40LDE3LjMsMjA3LjYsMTA3LjYsMjQ4LDE4Ni41Yzc2LjksMTQ2LjEsMTE4NC4yLDI4NTAuOSwxMTg0LjIsMjg4OS40YzAsMjUtMTMuNSw2NS40LTMwLjgsODguNEM0MTYwLjEsMTM4My44LDQxMTUuOSwxMzcwLjMsMjYyOS45LDc1My4yeiIvPjxwYXRoIGQ9Ik01MjQyLjQsMTMwNC45Yy0yNS0yMy4xLTMwLjgtNTMuOC0yMy4xLTEwOS42YzEzLjUtMTI1LDExNTEuNS0yODUwLjksMTIyNi41LTI5NDEuM2M3NS04OC40LDE2Ny4zLTEzMC43LDI4OC40LTEzMC43YzEwNS43LDEuOSwxNTUuNywyNSwzODYuNCwxODAuN2M0MzguMywyOTIuMiw4NTkuMyw3MTksMTE1Ny4zLDExNjguOGMxMzguNCwyMDkuNiwxNzMsMjk5LjksMTU3LjYsNDExLjRDODQxOC4yLTguMSw4MzMxLjcsMTE1LDgyMzMuNywxNjNjLTQwLjQsMjEuMS02OTAuMSwyOTQuMS0xNDQ1LjYsNjA3LjVDNTM3NywxMzUzLDUzMTMuNSwxMzc2LjEsNTI0Mi40LDEzMDQuOXoiLz48cGF0aCBkPSJNNDY3OS4yLDEwODEuOWMtMjUtMTEuNS02My40LTU1LjgtODQuNi05OGMtMjMuMS00NC4yLTI5Ni02OTIuMS02MDcuNS0xNDQzLjdjLTUyNi43LTEyNjYuOS01NjcuMS0xMzcyLjYtNTY5LTE0ODQuMWMtMS45LTEwMS45LDUuOC0xMjguOCw1NS43LTE5OS45YzgwLjctMTE1LjMsMTQ0LjItMTQ2LjEsNDA1LjYtMTk5LjljNTY5LTExNS4zLDExNDAtMTE1LjMsMTcwNy4xLDBjMjYxLjQsNTMuOCwzNTUuNiwxMDMuOCw0MTEuNCwyMTcuMmM2MS41LDExOS4yLDY3LjMsMTk5LjksMjUsMzI0LjljLTIxLjEsNjEuNS0yODguNCw3MTcuMS01OTUuOSwxNDU3LjJDNDgwNy45LDExNDcuMyw0ODA5LjksMTE0NS40LDQ2NzkuMiwxMDgxLjl6Ii8+PC9nPjwvZz48L3N2Zz4=" />
+    <link rel="shortcut icon" type="image/svg+xml" href="data:image/svg+xml;base64,PCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj48c3ZnIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCAxMDAwIDEwMDAiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDEwMDAgMTAwMCIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PG1ldGFkYXRhPiBTdmcgVmVjdG9yIEljb25zIDogaHR0cDovL3d3dy5vbmxpbmV3ZWJmb250cy5jb20vaWNvbiA8L21ldGFkYXRhPjxnPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAuMDAwMDAwLDUxMS4wMDAwMDApIHNjYWxlKDAuMTAwMDAwLC0wLjEwMDAwMCkiPjxwYXRoIGQ9Ik05MzQ0LjgsMzUyMy40Yy0xMDEuOS02Ny4zLTEyMS4xLTE1MS45LTczLjEtMzI0LjljMTQ0LjItNTI2LjcsMTkyLjItODY4LjksMTkyLjItMTM3MC43YzAtNjc0LjgtMTE1LjMtMTIzOS45LTM3OC43LTE4NzAuNWMtNDU5LjUtMTA5Ny43LTEzODIuMi0yMDIwLjQtMjQ4OS41LTI0OTEuNGMtMTc4NC03NTcuNC0zODM3LjEtMzU5LjUtNTIwOS43LDEwMDcuM2MtMzMwLjYsMzI4LjgtNTg4LjMsNjY5LTc5NS45LDEwNDcuN2MtOTIuMywxNjkuMi0xMzQuNiwyMTcuMi0yMTUuMywyMzguNEMyMzguNC0yMDIuMiwxMDAtMjk4LjMsMTAwLTQzMWMwLTYxLjUsMTM4LjQtMzE3LjIsMzE1LjMtNTg2LjNjNzk0LTEyMDMuNCwyMDM3LjctMjAxMi44LDM0NzEuOS0yMjU2LjljMTYxOC43LTI3Ni44LDMzMTAuNCwyNjEuNSw0NDc3LjMsMTQyMC43Qzk2NzMuNS01NTAuMiwxMDE5Mi42LDEzMjAuMyw5NzM4LjksMzExMmMtNzYuOSwzMDUuNy0xMTUuNCwzOTAuMi0xODguNCw0MjQuOEM5NDYyLjEsMzU3OS4xLDk0MjEuNywzNTc1LjMsOTM0NC44LDM1MjMuNHoiLz48cGF0aCBkPSJNODM0Ny4xLDMxMTcuOGMtMjc4LjgtMTA3LjctMjc3OS44LTExNTMuNC0yODE4LjItMTE3Ni41Yy0xMDAtNjcuMy03OC44LTE5Mi4yLDQ0LjItMjUzLjhjNDAuNC0yMS4xLDY5Mi4xLTI5NC4xLDE0NDkuNS02MDcuNWMxNDk1LjYtNjE5LDE0NzAuNi02MTEuMywxNjQzLjctNTMyLjVjMTQyLjMsNjUuNCwxODQuNiwxNTMuOCwyNTkuNSw1NDkuOGM1MCwyNjUuMyw3MS4xLDg4Ni4yLDM4LjQsMTE4MC4zYy0yOC44LDI2OS4xLTkyLjMsNTcxLTEzOC40LDY2Ny4xYy01NS43LDExNS4zLTE2NS4zLDE4Ni41LTMwMS44LDE5NC4yQzg0NjQuMywzMTQwLjgsODM4My42LDMxMzMuMSw4MzQ3LjEsMzExNy44eiIvPjxwYXRoIGQ9Ik0yNjI5LjksNzUzLjJDMTgwNy4xLDQxMSwxMjAxLjUsMTQ5LjYsMTE2My4xLDExNi45Yy05Mi4zLTczLjEtMTQ4LTIwMS45LTEzNi41LTMxOS4xYzI1LTI1Ny42LDY1My42LTEwMDkuMywxMTQ5LjYtMTM3NC41YzM2NS4zLTI3MS4xLDQ4NC40LTMyNC45LDY0NC0yOTIuMmM4OC40LDE3LjMsMjA3LjYsMTA3LjYsMjQ4LDE4Ni41Yzc2LjksMTQ2LjEsMTE4NC4yLDI4NTAuOSwxMTg0LjIsMjg4OS40YzAsMjUtMTMuNSw2NS40LTMwLjgsODguNEM0MTYwLjEsMTM4My44LDQxMTUuOSwxMzcwLjMsMjYyOS45LDc1My4yeiIvPjxwYXRoIGQ9Ik01MjQyLjQsMTMwNC45Yy0yNS0yMy4xLTMwLjgtNTMuOC0yMy4xLTEwOS42YzEzLjUtMTI1LDExNTEuNS0yODUwLjksMTIyNi41LTI5NDEuM2M3NS04OC40LDE2Ny4zLTEzMC43LDI4OC40LTEzMC43YzEwNS43LDEuOSwxNTUuNywyNSwzODYuNCwxODAuN2M0MzguMywyOTIuMiw4NTkuMyw3MTksMTE1Ny4zLDExNjguOGMxMzguNCwyMDkuNiwxNzMsMjk5LjksMTU3LjYsNDExLjRDODQxOC4yLTguMSw4MzMxLjcsMTE1LDgyMzMuNywxNjNjLTQwLjQsMjEuMS02OTAuMSwyOTQuMS0xNDQ1LjYsNjA3LjVDNTM3NywxMzUzLDUzMTMuNSwxMzc2LjEsNTI0Mi40LDEzMDQuOXoiLz48cGF0aCBkPSJNNDY3OS4yLDEwODEuOWMtMjUtMTEuNS02My40LTU1LjgtODQuNi05OGMtMjMuMS00NC4yLTI5Ni02OTIuMS02MDcuNS0xNDQzLjdjLTUyNi43LTEyNjYuOS01NjcuMS0xMzcyLjYtNTY5LTE0ODQuMWMtMS45LTEwMS45LDUuOC0xMjguOCw1NS43LTE5OS45YzgwLjctMTE1LjMsMTQ0LjItMTQ2LjEsNDA1LjYtMTk5LjljNTY5LTExNS4zLDExNDAtMTE1LjMsMTcwNy4xLDBjMjYxLjQsNTMuOCwzNTUuNiwxMDMuOCw0MTEuNCwyMTcuMmM2MS41LDExOS4yLDY3LjMsMTk5LjksMjUsMzI0LjljLTIxLjEsNjEuNS0yODguNCw3MTcuMS01OTUuOSwxNDU3LjJDNDgwNy45LDExNDcuMyw0ODA5LjksMTE0NS40LDQ2NzkuMiwxMDgxLjl6Ii8+PC9nPjwvZz48L3N2Zz4=" />
+    <link rel="icon" type="image/svg+xml" sizes="16x16 32x32 36x36 48x48 72x72 96x96 144x144 192x192 196x196" href="data:image/svg+xml;base64,PCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj48c3ZnIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCAxMDAwIDEwMDAiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDEwMDAgMTAwMCIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PG1ldGFkYXRhPiBTdmcgVmVjdG9yIEljb25zIDogaHR0cDovL3d3dy5vbmxpbmV3ZWJmb250cy5jb20vaWNvbiA8L21ldGFkYXRhPjxnPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAuMDAwMDAwLDUxMS4wMDAwMDApIHNjYWxlKDAuMTAwMDAwLC0wLjEwMDAwMCkiPjxwYXRoIGQ9Ik05MzQ0LjgsMzUyMy40Yy0xMDEuOS02Ny4zLTEyMS4xLTE1MS45LTczLjEtMzI0LjljMTQ0LjItNTI2LjcsMTkyLjItODY4LjksMTkyLjItMTM3MC43YzAtNjc0LjgtMTE1LjMtMTIzOS45LTM3OC43LTE4NzAuNWMtNDU5LjUtMTA5Ny43LTEzODIuMi0yMDIwLjQtMjQ4OS41LTI0OTEuNGMtMTc4NC03NTcuNC0zODM3LjEtMzU5LjUtNTIwOS43LDEwMDcuM2MtMzMwLjYsMzI4LjgtNTg4LjMsNjY5LTc5NS45LDEwNDcuN2MtOTIuMywxNjkuMi0xMzQuNiwyMTcuMi0yMTUuMywyMzguNEMyMzguNC0yMDIuMiwxMDAtMjk4LjMsMTAwLTQzMWMwLTYxLjUsMTM4LjQtMzE3LjIsMzE1LjMtNTg2LjNjNzk0LTEyMDMuNCwyMDM3LjctMjAxMi44LDM0NzEuOS0yMjU2LjljMTYxOC43LTI3Ni44LDMzMTAuNCwyNjEuNSw0NDc3LjMsMTQyMC43Qzk2NzMuNS01NTAuMiwxMDE5Mi42LDEzMjAuMyw5NzM4LjksMzExMmMtNzYuOSwzMDUuNy0xMTUuNCwzOTAuMi0xODguNCw0MjQuOEM5NDYyLjEsMzU3OS4xLDk0MjEuNywzNTc1LjMsOTM0NC44LDM1MjMuNHoiLz48cGF0aCBkPSJNODM0Ny4xLDMxMTcuOGMtMjc4LjgtMTA3LjctMjc3OS44LTExNTMuNC0yODE4LjItMTE3Ni41Yy0xMDAtNjcuMy03OC44LTE5Mi4yLDQ0LjItMjUzLjhjNDAuNC0yMS4xLDY5Mi4xLTI5NC4xLDE0NDkuNS02MDcuNWMxNDk1LjYtNjE5LDE0NzAuNi02MTEuMywxNjQzLjctNTMyLjVjMTQyLjMsNjUuNCwxODQuNiwxNTMuOCwyNTkuNSw1NDkuOGM1MCwyNjUuMyw3MS4xLDg4Ni4yLDM4LjQsMTE4MC4zYy0yOC44LDI2OS4xLTkyLjMsNTcxLTEzOC40LDY2Ny4xYy01NS43LDExNS4zLTE2NS4zLDE4Ni41LTMwMS44LDE5NC4yQzg0NjQuMywzMTQwLjgsODM4My42LDMxMzMuMSw4MzQ3LjEsMzExNy44eiIvPjxwYXRoIGQ9Ik0yNjI5LjksNzUzLjJDMTgwNy4xLDQxMSwxMjAxLjUsMTQ5LjYsMTE2My4xLDExNi45Yy05Mi4zLTczLjEtMTQ4LTIwMS45LTEzNi41LTMxOS4xYzI1LTI1Ny42LDY1My42LTEwMDkuMywxMTQ5LjYtMTM3NC41YzM2NS4zLTI3MS4xLDQ4NC40LTMyNC45LDY0NC0yOTIuMmM4OC40LDE3LjMsMjA3LjYsMTA3LjYsMjQ4LDE4Ni41Yzc2LjksMTQ2LjEsMTE4NC4yLDI4NTAuOSwxMTg0LjIsMjg4OS40YzAsMjUtMTMuNSw2NS40LTMwLjgsODguNEM0MTYwLjEsMTM4My44LDQxMTUuOSwxMzcwLjMsMjYyOS45LDc1My4yeiIvPjxwYXRoIGQ9Ik01MjQyLjQsMTMwNC45Yy0yNS0yMy4xLTMwLjgtNTMuOC0yMy4xLTEwOS42YzEzLjUtMTI1LDExNTEuNS0yODUwLjksMTIyNi41LTI5NDEuM2M3NS04OC40LDE2Ny4zLTEzMC43LDI4OC40LTEzMC43YzEwNS43LDEuOSwxNTUuNywyNSwzODYuNCwxODAuN2M0MzguMywyOTIuMiw4NTkuMyw3MTksMTE1Ny4zLDExNjguOGMxMzguNCwyMDkuNiwxNzMsMjk5LjksMTU3LjYsNDExLjRDODQxOC4yLTguMSw4MzMxLjcsMTE1LDgyMzMuNywxNjNjLTQwLjQsMjEuMS02OTAuMSwyOTQuMS0xNDQ1LjYsNjA3LjVDNTM3NywxMzUzLDUzMTMuNSwxMzc2LjEsNTI0Mi40LDEzMDQuOXoiLz48cGF0aCBkPSJNNDY3OS4yLDEwODEuOWMtMjUtMTEuNS02My40LTU1LjgtODQuNi05OGMtMjMuMS00NC4yLTI5Ni02OTIuMS02MDcuNS0xNDQzLjdjLTUyNi43LTEyNjYuOS01NjcuMS0xMzcyLjYtNTY5LTE0ODQuMWMtMS45LTEwMS45LDUuOC0xMjguOCw1NS43LTE5OS45YzgwLjctMTE1LjMsMTQ0LjItMTQ2LjEsNDA1LjYtMTk5LjljNTY5LTExNS4zLDExNDAtMTE1LjMsMTcwNy4xLDBjMjYxLjQsNTMuOCwzNTUuNiwxMDMuOCw0MTEuNCwyMTcuMmM2MS41LDExOS4yLDY3LjMsMTk5LjksMjUsMzI0LjljLTIxLjEsNjEuNS0yODguNCw3MTcuMS01OTUuOSwxNDU3LjJDNDgwNy45LDExNDcuMyw0ODA5LjksMTE0NS40LDQ2NzkuMiwxMDgxLjl6Ii8+PC9nPjwvZz48L3N2Zz4=" />
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj48c3ZnIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCAxMDAwIDEwMDAiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDEwMDAgMTAwMCIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PG1ldGFkYXRhPiBTdmcgVmVjdG9yIEljb25zIDogaHR0cDovL3d3dy5vbmxpbmV3ZWJmb250cy5jb20vaWNvbiA8L21ldGFkYXRhPjxnPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAuMDAwMDAwLDUxMS4wMDAwMDApIHNjYWxlKDAuMTAwMDAwLC0wLjEwMDAwMCkiPjxwYXRoIGQ9Ik05MzQ0LjgsMzUyMy40Yy0xMDEuOS02Ny4zLTEyMS4xLTE1MS45LTczLjEtMzI0LjljMTQ0LjItNTI2LjcsMTkyLjItODY4LjksMTkyLjItMTM3MC43YzAtNjc0LjgtMTE1LjMtMTIzOS45LTM3OC43LTE4NzAuNWMtNDU5LjUtMTA5Ny43LTEzODIuMi0yMDIwLjQtMjQ4OS41LTI0OTEuNGMtMTc4NC03NTcuNC0zODM3LjEtMzU5LjUtNTIwOS43LDEwMDcuM2MtMzMwLjYsMzI4LjgtNTg4LjMsNjY5LTc5NS45LDEwNDcuN2MtOTIuMywxNjkuMi0xMzQuNiwyMTcuMi0yMTUuMywyMzguNEMyMzguNC0yMDIuMiwxMDAtMjk4LjMsMTAwLTQzMWMwLTYxLjUsMTM4LjQtMzE3LjIsMzE1LjMtNTg2LjNjNzk0LTEyMDMuNCwyMDM3LjctMjAxMi44LDM0NzEuOS0yMjU2LjljMTYxOC43LTI3Ni44LDMzMTAuNCwyNjEuNSw0NDc3LjMsMTQyMC43Qzk2NzMuNS01NTAuMiwxMDE5Mi42LDEzMjAuMyw5NzM4LjksMzExMmMtNzYuOSwzMDUuNy0xMTUuNCwzOTAuMi0xODguNCw0MjQuOEM5NDYyLjEsMzU3OS4xLDk0MjEuNywzNTc1LjMsOTM0NC44LDM1MjMuNHoiLz48cGF0aCBkPSJNODM0Ny4xLDMxMTcuOGMtMjc4LjgtMTA3LjctMjc3OS44LTExNTMuNC0yODE4LjItMTE3Ni41Yy0xMDAtNjcuMy03OC44LTE5Mi4yLDQ0LjItMjUzLjhjNDAuNC0yMS4xLDY5Mi4xLTI5NC4xLDE0NDkuNS02MDcuNWMxNDk1LjYtNjE5LDE0NzAuNi02MTEuMywxNjQzLjctNTMyLjVjMTQyLjMsNjUuNCwxODQuNiwxNTMuOCwyNTkuNSw1NDkuOGM1MCwyNjUuMyw3MS4xLDg4Ni4yLDM4LjQsMTE4MC4zYy0yOC44LDI2OS4xLTkyLjMsNTcxLTEzOC40LDY2Ny4xYy01NS43LDExNS4zLTE2NS4zLDE4Ni41LTMwMS44LDE5NC4yQzg0NjQuMywzMTQwLjgsODM4My42LDMxMzMuMSw4MzQ3LjEsMzExNy44eiIvPjxwYXRoIGQ9Ik0yNjI5LjksNzUzLjJDMTgwNy4xLDQxMSwxMjAxLjUsMTQ5LjYsMTE2My4xLDExNi45Yy05Mi4zLTczLjEtMTQ4LTIwMS45LTEzNi41LTMxOS4xYzI1LTI1Ny42LDY1My42LTEwMDkuMywxMTQ5LjYtMTM3NC41YzM2NS4zLTI3MS4xLDQ4NC40LTMyNC45LDY0NC0yOTIuMmM4OC40LDE3LjMsMjA3LjYsMTA3LjYsMjQ4LDE4Ni41Yzc2LjksMTQ2LjEsMTE4NC4yLDI4NTAuOSwxMTg0LjIsMjg4OS40YzAsMjUtMTMuNSw2NS40LTMwLjgsODguNEM0MTYwLjEsMTM4My44LDQxMTUuOSwxMzcwLjMsMjYyOS45LDc1My4yeiIvPjxwYXRoIGQ9Ik01MjQyLjQsMTMwNC45Yy0yNS0yMy4xLTMwLjgtNTMuOC0yMy4xLTEwOS42YzEzLjUtMTI1LDExNTEuNS0yODUwLjksMTIyNi41LTI5NDEuM2M3NS04OC40LDE2Ny4zLTEzMC43LDI4OC40LTEzMC43YzEwNS43LDEuOSwxNTUuNywyNSwzODYuNCwxODAuN2M0MzguMywyOTIuMiw4NTkuMyw3MTksMTE1Ny4zLDExNjguOGMxMzguNCwyMDkuNiwxNzMsMjk5LjksMTU3LjYsNDExLjRDODQxOC4yLTguMSw4MzMxLjcsMTE1LDgyMzMuNywxNjNjLTQwLjQsMjEuMS02OTAuMSwyOTQuMS0xNDQ1LjYsNjA3LjVDNTM3NywxMzUzLDUzMTMuNSwxMzc2LjEsNTI0Mi40LDEzMDQuOXoiLz48cGF0aCBkPSJNNDY3OS4yLDEwODEuOWMtMjUtMTEuNS02My40LTU1LjgtODQuNi05OGMtMjMuMS00NC4yLTI5Ni02OTIuMS02MDcuNS0xNDQzLjdjLTUyNi43LTEyNjYuOS01NjcuMS0xMzcyLjYtNTY5LTE0ODQuMWMtMS45LTEwMS45LDUuOC0xMjguOCw1NS43LTE5OS45YzgwLjctMTE1LjMsMTQ0LjItMTQ2LjEsNDA1LjYtMTk5LjljNTY5LTExNS4zLDExNDAtMTE1LjMsMTcwNy4xLDBjMjYxLjQsNTMuOCwzNTUuNiwxMDMuOCw0MTEuNCwyMTcuMmM2MS41LDExOS4yLDY3LjMsMTk5LjksMjUsMzI0LjljLTIxLjEsNjEuNS0yODguNCw3MTcuMS01OTUuOSwxNDU3LjJDNDgwNy45LDExNDcuMyw0ODA5LjksMTE0NS40LDQ2NzkuMiwxMDgxLjl6Ii8+PC9nPjwvZz48L3N2Zz4=" />
+    <link rel="mask-icon" href="./?icon_svg" color="#de11e7" />
+    <link rel="image_src" type="image/svg+xml" data-width="300" data-height="250" href="./?icon_svg" />
+
+    <meta name="author" content="radmadical" />
+    <meta name="copyright" content="none" />
+    <meta name="owner" content="user" />
+    <meta name="robots" content="index,follow" />
+    <meta name="googlebot" content="index,follow" />
+    <meta name="description" content="Web 3.0 PWA boilerplate" />
+    <meta name="subject" content="Web 3.0 PWA boilerplates" />
+    <meta name="topic" content="Decentralized Web">
+    <meta name="keywords" content="web3, pwa, boilerplate" />
+    <meta name="news_keywords" content="web3, pwa, boilerplate">
+    <meta name="url" content="./" />
+    
+    <meta name="msvalidate.01" content="43556439B0985232898564170ACB3EC6" />
+
+    <meta property="og:title" content="web3_webapp">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="./">
+    <meta property="og:description" content="Web 3.0 PWA boilerplate">
+    <meta property="og:site_name" content="web3_webapp">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:image" content="./?icon_svg">
+    <meta property="og:image:type" content="image/svg+xml">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Web 3.0 PWA boilerplate logo">
+
+    <meta name="twitter:card" content="app">
+    <!--<meta name="twitter:site" content="@site_account">
+    <meta name="twitter:creator" content="@individual_account">-->
+    <meta name="twitter:url" content="./">
+    <meta name="twitter:title" content="web3_webapp">
+    <meta name="twitter:app:name:iphone" content="web3_webapp">
+    <meta name="twitter:app:name:ipad" content="web3_webapp">
+    <meta name="twitter:app:name:googleplay" content="web3_webapp">
+    <meta name="twitter:description" content="Web 3.0 PWA boilerplate">
+    <meta name="twitter:creator" content="radmadical">
+    <meta name="twitter:image" content="./?icon_svg">
+    <meta name="twitter:image:alt" content="Web 3.0 PWA boilerplate logo">
+
+
+    <meta name="application-name" content="web3_webapp">
+    
+    <meta name="HandheldFriendly" content="true">
+    <meta name="MobileOptimized" content="480">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="web3_webapp">
+    <meta name="apple-touch-fullscreen" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="#f2f2f2">
+
+    <link rel="apple-touch-icon" type="image/png" sizes="57x57 60x60 72x72 76x76" href="./?icon_png_sq_sm" />
+    <link rel="apple-touch-icon" type="image/png" sizes="114x114 120x120 144x144 152x152 167x167 180x180" href="./?icon_png_sq_lg" />
+    <link rel="apple-touch-icon" type="image/png" sizes="1857x57" href="./?icon_png_banner" />
+    <link rel="apple-touch-icon" type="image/png" href="./?icon_png_sq_sm" />
+
+    <link rel="apple-touch-icon-precomposed" type="image/png" sizes="57x57 60x60 72x72 76x76" href="./?icon_png_sq_sm" />
+    <link rel="apple-touch-icon-precomposed" type="image/png" sizes="114x114 120x120 144x144 152x152 167x167 180x180" href="./?icon_png_sq_lg" />
+    <link rel="apple-touch-icon-precomposed" type="image/png" sizes="1857x57" href="./?icon_png_banner" />
+    <link rel="apple-touch-icon-precomposed" type="image/png" href="<? echo 'https://' . preg_filter('/\.[^.]*?$/', '', $_SERVER["HTTP_HOST"]); ?>.<? echo preg_filter('/^.*\./', '', $_SERVER["HTTP_HOST"]); ?>/?icon_png_sq_sm" />
+    
+    <link rel="fluid-icon" type="image/svg+xml" href="./?icon_png_sq_lg" />
+
+
+    <link rel="apple-touch-startup-image" href="./?splash_png_320x460" media="(device-width:  320px) and (device-height:  460px) and (-webkit-device-pixel-ratio: 1)">
+    <link rel="apple-touch-startup-image" href="./?splash_png_640x920" media="(device-width:  320px) and (device-height:  460px) and (-webkit-device-pixel-ratio: 2)">
+
+    <link rel="apple-touch-startup-image" href="./?splash_png_320x460" media="(device-width:  320px) and (device-height:  480px) and (-webkit-device-pixel-ratio: 1)">
+    <link rel="apple-touch-startup-image" href="./?splash_png_640x920" media="(device-width:  320px) and (device-height:  480px) and (-webkit-device-pixel-ratio: 2)">
+
+    <link rel="apple-touch-startup-image" href="./?splash_png_320x568" media="(device-width:  320px) and (device-height:  568px) and (-webkit-device-pixel-ratio: 1) and (orientation: portrait)">
+    <link rel="apple-touch-startup-image" href="./?splash_png_568x320" media="(device-width:  320px) and (device-height:  568px) and (-webkit-device-pixel-ratio: 1) and (orientation: landscape)">
+
+    <link rel="apple-touch-startup-image" href="./?splash_png_2048x2732" media="(device-width:  1024px) and (device-height:  1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+    <link rel="apple-touch-startup-image" href="./?splash_png_1668x2388" media="(device-width:  834px) and (device-height:  1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+    <link rel="apple-touch-startup-image" href="./?splash_png_1536x2048" media="(device-width:  768px) and (device-height:  1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+    <link rel="apple-touch-startup-image" href="./?splash_png_1668x2224" media="(device-width:  834px) and (device-height:  1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+    <link rel="apple-touch-startup-image" href="./?splash_png_1620x2160" media="(device-width:  810px) and (device-height:  1080px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+    <link rel="apple-touch-startup-image" href="./?splash_png_1284x2778" media="(device-width:  428px) and (device-height:  926px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+    <link rel="apple-touch-startup-image" href="./?splash_png_1170x2532" media="(device-width:  390px) and (device-height:  844px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+    <link rel="apple-touch-startup-image" href="./?splash_png_1125x2436" media="(device-width:  375px) and (device-height:  812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+    <link rel="apple-touch-startup-image" href="./?splash_png_1242x2688" media="(device-width:  414px) and (device-height:  896px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+    <link rel="apple-touch-startup-image" href="./?splash_png_828x1792" media="(device-width:  414px) and (device-height:  896px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+    <link rel="apple-touch-startup-image" href="./?splash_png_1080x1920" media="(device-width:  414px) and (device-height:  736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)">
+    <link rel="apple-touch-startup-image" href="./?splash_png_750x1334" media="(device-width:  375px) and (device-height:  667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+    <link rel="apple-touch-startup-image" href="./?splash_png_640x1136" media="(device-width:  320px) and (device-height:  568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
+    <link rel="apple-touch-startup-image" href="./?splash_png_768x1024" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 1) and (orientation: portrait) ">
+
+    <link rel="apple-touch-startup-image" href="./?splash_png_2732x2048" media="(device-width:  1024px) and (device-height:  1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
+    <link rel="apple-touch-startup-image" href="./?splash_png_2388x1668" media="(device-width:  834px) and (device-height:  1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
+    <link rel="apple-touch-startup-image" href="./?splash_png_2048x1536" media="(device-width:  768px) and (device-height:  1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
+    <link rel="apple-touch-startup-image" href="./?splash_png_2224x1668" media="(device-width:  834px) and (device-height:  1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
+    <link rel="apple-touch-startup-image" href="./?splash_png_2160x1620" media="(device-width:  810px) and (device-height:  1080px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
+    <link rel="apple-touch-startup-image" href="./?splash_png_2778x1284" media="(device-width:  428px) and (device-height:  926px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)">
+    <link rel="apple-touch-startup-image" href="./?splash_png_2532x1170" media="(device-width:  390px) and (device-height:  844px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)">
+    <link rel="apple-touch-startup-image" href="./?splash_png_2436x1125" media="(device-width:  375px) and (device-height:  812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)">
+    <link rel="apple-touch-startup-image" href="./?splash_png_2688x1242" media="(device-width:  414px) and (device-height:  896px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)">
+    <link rel="apple-touch-startup-image" href="./?splash_png_1792x828" media="(device-width:  414px) and (device-height:  896px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
+    <link rel="apple-touch-startup-image" href="./?splash_png_1920x1080" media="(device-width:  414px) and (device-height:  736px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)">
+    <link rel="apple-touch-startup-image" href="./?splash_png_1334x750" media="(device-width:  375px) and (device-height:  667px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
+    <link rel="apple-touch-startup-image" href="./?splash_png_1136x640" media="(device-width:  320px) and (device-height:  568px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
+    <link rel="apple-touch-startup-image" href="./?splash_png_1024x768" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 1) and (orientation: landscape)">
+
+
+    <meta name="msapplication-TileImage" content="data:image/svg+xml;base64,PCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj48c3ZnIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCAxMDAwIDEwMDAiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDEwMDAgMTAwMCIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PG1ldGFkYXRhPiBTdmcgVmVjdG9yIEljb25zIDogaHR0cDovL3d3dy5vbmxpbmV3ZWJmb250cy5jb20vaWNvbiA8L21ldGFkYXRhPjxnPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAuMDAwMDAwLDUxMS4wMDAwMDApIHNjYWxlKDAuMTAwMDAwLC0wLjEwMDAwMCkiPjxwYXRoIGQ9Ik05MzQ0LjgsMzUyMy40Yy0xMDEuOS02Ny4zLTEyMS4xLTE1MS45LTczLjEtMzI0LjljMTQ0LjItNTI2LjcsMTkyLjItODY4LjksMTkyLjItMTM3MC43YzAtNjc0LjgtMTE1LjMtMTIzOS45LTM3OC43LTE4NzAuNWMtNDU5LjUtMTA5Ny43LTEzODIuMi0yMDIwLjQtMjQ4OS41LTI0OTEuNGMtMTc4NC03NTcuNC0zODM3LjEtMzU5LjUtNTIwOS43LDEwMDcuM2MtMzMwLjYsMzI4LjgtNTg4LjMsNjY5LTc5NS45LDEwNDcuN2MtOTIuMywxNjkuMi0xMzQuNiwyMTcuMi0yMTUuMywyMzguNEMyMzguNC0yMDIuMiwxMDAtMjk4LjMsMTAwLTQzMWMwLTYxLjUsMTM4LjQtMzE3LjIsMzE1LjMtNTg2LjNjNzk0LTEyMDMuNCwyMDM3LjctMjAxMi44LDM0NzEuOS0yMjU2LjljMTYxOC43LTI3Ni44LDMzMTAuNCwyNjEuNSw0NDc3LjMsMTQyMC43Qzk2NzMuNS01NTAuMiwxMDE5Mi42LDEzMjAuMyw5NzM4LjksMzExMmMtNzYuOSwzMDUuNy0xMTUuNCwzOTAuMi0xODguNCw0MjQuOEM5NDYyLjEsMzU3OS4xLDk0MjEuNywzNTc1LjMsOTM0NC44LDM1MjMuNHoiLz48cGF0aCBkPSJNODM0Ny4xLDMxMTcuOGMtMjc4LjgtMTA3LjctMjc3OS44LTExNTMuNC0yODE4LjItMTE3Ni41Yy0xMDAtNjcuMy03OC44LTE5Mi4yLDQ0LjItMjUzLjhjNDAuNC0yMS4xLDY5Mi4xLTI5NC4xLDE0NDkuNS02MDcuNWMxNDk1LjYtNjE5LDE0NzAuNi02MTEuMywxNjQzLjctNTMyLjVjMTQyLjMsNjUuNCwxODQuNiwxNTMuOCwyNTkuNSw1NDkuOGM1MCwyNjUuMyw3MS4xLDg4Ni4yLDM4LjQsMTE4MC4zYy0yOC44LDI2OS4xLTkyLjMsNTcxLTEzOC40LDY2Ny4xYy01NS43LDExNS4zLTE2NS4zLDE4Ni41LTMwMS44LDE5NC4yQzg0NjQuMywzMTQwLjgsODM4My42LDMxMzMuMSw4MzQ3LjEsMzExNy44eiIvPjxwYXRoIGQ9Ik0yNjI5LjksNzUzLjJDMTgwNy4xLDQxMSwxMjAxLjUsMTQ5LjYsMTE2My4xLDExNi45Yy05Mi4zLTczLjEtMTQ4LTIwMS45LTEzNi41LTMxOS4xYzI1LTI1Ny42LDY1My42LTEwMDkuMywxMTQ5LjYtMTM3NC41YzM2NS4zLTI3MS4xLDQ4NC40LTMyNC45LDY0NC0yOTIuMmM4OC40LDE3LjMsMjA3LjYsMTA3LjYsMjQ4LDE4Ni41Yzc2LjksMTQ2LjEsMTE4NC4yLDI4NTAuOSwxMTg0LjIsMjg4OS40YzAsMjUtMTMuNSw2NS40LTMwLjgsODguNEM0MTYwLjEsMTM4My44LDQxMTUuOSwxMzcwLjMsMjYyOS45LDc1My4yeiIvPjxwYXRoIGQ9Ik01MjQyLjQsMTMwNC45Yy0yNS0yMy4xLTMwLjgtNTMuOC0yMy4xLTEwOS42YzEzLjUtMTI1LDExNTEuNS0yODUwLjksMTIyNi41LTI5NDEuM2M3NS04OC40LDE2Ny4zLTEzMC43LDI4OC40LTEzMC43YzEwNS43LDEuOSwxNTUuNywyNSwzODYuNCwxODAuN2M0MzguMywyOTIuMiw4NTkuMyw3MTksMTE1Ny4zLDExNjguOGMxMzguNCwyMDkuNiwxNzMsMjk5LjksMTU3LjYsNDExLjRDODQxOC4yLTguMSw4MzMxLjcsMTE1LDgyMzMuNywxNjNjLTQwLjQsMjEuMS02OTAuMSwyOTQuMS0xNDQ1LjYsNjA3LjVDNTM3NywxMzUzLDUzMTMuNSwxMzc2LjEsNTI0Mi40LDEzMDQuOXoiLz48cGF0aCBkPSJNNDY3OS4yLDEwODEuOWMtMjUtMTEuNS02My40LTU1LjgtODQuNi05OGMtMjMuMS00NC4yLTI5Ni02OTIuMS02MDcuNS0xNDQzLjdjLTUyNi43LTEyNjYuOS01NjcuMS0xMzcyLjYtNTY5LTE0ODQuMWMtMS45LTEwMS45LDUuOC0xMjguOCw1NS43LTE5OS45YzgwLjctMTE1LjMsMTQ0LjItMTQ2LjEsNDA1LjYtMTk5LjljNTY5LTExNS4zLDExNDAtMTE1LjMsMTcwNy4xLDBjMjYxLjQsNTMuOCwzNTUuNiwxMDMuOCw0MTEuNCwyMTcuMmM2MS41LDExOS4yLDY3LjMsMTk5LjksMjUsMzI0LjljLTIxLjEsNjEuNS0yODguNCw3MTcuMS01OTUuOSwxNDU3LjJDNDgwNy45LDExNDcuMyw0ODA5LjksMTE0NS40LDQ2NzkuMiwxMDgxLjl6Ii8+PC9nPjwvZz48L3N2Zz4=">
+    <meta name="msapplication-TileColor" content="#f2f2f2">
+    <meta name="theme-color" content="#f2f2f2">
+    <meta name='mssmarttagspreventparsing' content='true'>
+    <meta http-equiv='cleartype' content='on'>
+    <meta name="msapplication-tooltip" content="web3_webapp" />
+    <meta name="msapplication-starturl" content="./" />
+    <meta name="msapplication-window" content="width=1024;height=768" />
+    <meta name="msapplication-navbutton-color" content="#f2f2f2" />
+
+    <!-- if SVG doesn't work for msapplication- : ideal raster img sizes : 70 x 70	->	128 x 128, 150 x 150 -> 270 x 270, 310 x 150 -> 558 x 270, 310 x 310 -> 558 x 558 -->
+    <meta name="msapplication-square70x70logo" content="data:image/svg+xml;base64,PCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj48c3ZnIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCAxMDAwIDEwMDAiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDEwMDAgMTAwMCIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PG1ldGFkYXRhPiBTdmcgVmVjdG9yIEljb25zIDogaHR0cDovL3d3dy5vbmxpbmV3ZWJmb250cy5jb20vaWNvbiA8L21ldGFkYXRhPjxnPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAuMDAwMDAwLDUxMS4wMDAwMDApIHNjYWxlKDAuMTAwMDAwLC0wLjEwMDAwMCkiPjxwYXRoIGQ9Ik05MzQ0LjgsMzUyMy40Yy0xMDEuOS02Ny4zLTEyMS4xLTE1MS45LTczLjEtMzI0LjljMTQ0LjItNTI2LjcsMTkyLjItODY4LjksMTkyLjItMTM3MC43YzAtNjc0LjgtMTE1LjMtMTIzOS45LTM3OC43LTE4NzAuNWMtNDU5LjUtMTA5Ny43LTEzODIuMi0yMDIwLjQtMjQ4OS41LTI0OTEuNGMtMTc4NC03NTcuNC0zODM3LjEtMzU5LjUtNTIwOS43LDEwMDcuM2MtMzMwLjYsMzI4LjgtNTg4LjMsNjY5LTc5NS45LDEwNDcuN2MtOTIuMywxNjkuMi0xMzQuNiwyMTcuMi0yMTUuMywyMzguNEMyMzguNC0yMDIuMiwxMDAtMjk4LjMsMTAwLTQzMWMwLTYxLjUsMTM4LjQtMzE3LjIsMzE1LjMtNTg2LjNjNzk0LTEyMDMuNCwyMDM3LjctMjAxMi44LDM0NzEuOS0yMjU2LjljMTYxOC43LTI3Ni44LDMzMTAuNCwyNjEuNSw0NDc3LjMsMTQyMC43Qzk2NzMuNS01NTAuMiwxMDE5Mi42LDEzMjAuMyw5NzM4LjksMzExMmMtNzYuOSwzMDUuNy0xMTUuNCwzOTAuMi0xODguNCw0MjQuOEM5NDYyLjEsMzU3OS4xLDk0MjEuNywzNTc1LjMsOTM0NC44LDM1MjMuNHoiLz48cGF0aCBkPSJNODM0Ny4xLDMxMTcuOGMtMjc4LjgtMTA3LjctMjc3OS44LTExNTMuNC0yODE4LjItMTE3Ni41Yy0xMDAtNjcuMy03OC44LTE5Mi4yLDQ0LjItMjUzLjhjNDAuNC0yMS4xLDY5Mi4xLTI5NC4xLDE0NDkuNS02MDcuNWMxNDk1LjYtNjE5LDE0NzAuNi02MTEuMywxNjQzLjctNTMyLjVjMTQyLjMsNjUuNCwxODQuNiwxNTMuOCwyNTkuNSw1NDkuOGM1MCwyNjUuMyw3MS4xLDg4Ni4yLDM4LjQsMTE4MC4zYy0yOC44LDI2OS4xLTkyLjMsNTcxLTEzOC40LDY2Ny4xYy01NS43LDExNS4zLTE2NS4zLDE4Ni41LTMwMS44LDE5NC4yQzg0NjQuMywzMTQwLjgsODM4My42LDMxMzMuMSw4MzQ3LjEsMzExNy44eiIvPjxwYXRoIGQ9Ik0yNjI5LjksNzUzLjJDMTgwNy4xLDQxMSwxMjAxLjUsMTQ5LjYsMTE2My4xLDExNi45Yy05Mi4zLTczLjEtMTQ4LTIwMS45LTEzNi41LTMxOS4xYzI1LTI1Ny42LDY1My42LTEwMDkuMywxMTQ5LjYtMTM3NC41YzM2NS4zLTI3MS4xLDQ4NC40LTMyNC45LDY0NC0yOTIuMmM4OC40LDE3LjMsMjA3LjYsMTA3LjYsMjQ4LDE4Ni41Yzc2LjksMTQ2LjEsMTE4NC4yLDI4NTAuOSwxMTg0LjIsMjg4OS40YzAsMjUtMTMuNSw2NS40LTMwLjgsODguNEM0MTYwLjEsMTM4My44LDQxMTUuOSwxMzcwLjMsMjYyOS45LDc1My4yeiIvPjxwYXRoIGQ9Ik01MjQyLjQsMTMwNC45Yy0yNS0yMy4xLTMwLjgtNTMuOC0yMy4xLTEwOS42YzEzLjUtMTI1LDExNTEuNS0yODUwLjksMTIyNi41LTI5NDEuM2M3NS04OC40LDE2Ny4zLTEzMC43LDI4OC40LTEzMC43YzEwNS43LDEuOSwxNTUuNywyNSwzODYuNCwxODAuN2M0MzguMywyOTIuMiw4NTkuMyw3MTksMTE1Ny4zLDExNjguOGMxMzguNCwyMDkuNiwxNzMsMjk5LjksMTU3LjYsNDExLjRDODQxOC4yLTguMSw4MzMxLjcsMTE1LDgyMzMuNywxNjNjLTQwLjQsMjEuMS02OTAuMSwyOTQuMS0xNDQ1LjYsNjA3LjVDNTM3NywxMzUzLDUzMTMuNSwxMzc2LjEsNTI0Mi40LDEzMDQuOXoiLz48cGF0aCBkPSJNNDY3OS4yLDEwODEuOWMtMjUtMTEuNS02My40LTU1LjgtODQuNi05OGMtMjMuMS00NC4yLTI5Ni02OTIuMS02MDcuNS0xNDQzLjdjLTUyNi43LTEyNjYuOS01NjcuMS0xMzcyLjYtNTY5LTE0ODQuMWMtMS45LTEwMS45LDUuOC0xMjguOCw1NS43LTE5OS45YzgwLjctMTE1LjMsMTQ0LjItMTQ2LjEsNDA1LjYtMTk5LjljNTY5LTExNS4zLDExNDAtMTE1LjMsMTcwNy4xLDBjMjYxLjQsNTMuOCwzNTUuNiwxMDMuOCw0MTEuNCwyMTcuMmM2MS41LDExOS4yLDY3LjMsMTk5LjksMjUsMzI0LjljLTIxLjEsNjEuNS0yODguNCw3MTcuMS01OTUuOSwxNDU3LjJDNDgwNy45LDExNDcuMyw0ODA5LjksMTE0NS40LDQ2NzkuMiwxMDgxLjl6Ii8+PC9nPjwvZz48L3N2Zz4=">
+    <meta name="msapplication-square144x144logo" content="data:image/svg+xml;base64,PCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj48c3ZnIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCAxMDAwIDEwMDAiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDEwMDAgMTAwMCIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PG1ldGFkYXRhPiBTdmcgVmVjdG9yIEljb25zIDogaHR0cDovL3d3dy5vbmxpbmV3ZWJmb250cy5jb20vaWNvbiA8L21ldGFkYXRhPjxnPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAuMDAwMDAwLDUxMS4wMDAwMDApIHNjYWxlKDAuMTAwMDAwLC0wLjEwMDAwMCkiPjxwYXRoIGQ9Ik05MzQ0LjgsMzUyMy40Yy0xMDEuOS02Ny4zLTEyMS4xLTE1MS45LTczLjEtMzI0LjljMTQ0LjItNTI2LjcsMTkyLjItODY4LjksMTkyLjItMTM3MC43YzAtNjc0LjgtMTE1LjMtMTIzOS45LTM3OC43LTE4NzAuNWMtNDU5LjUtMTA5Ny43LTEzODIuMi0yMDIwLjQtMjQ4OS41LTI0OTEuNGMtMTc4NC03NTcuNC0zODM3LjEtMzU5LjUtNTIwOS43LDEwMDcuM2MtMzMwLjYsMzI4LjgtNTg4LjMsNjY5LTc5NS45LDEwNDcuN2MtOTIuMywxNjkuMi0xMzQuNiwyMTcuMi0yMTUuMywyMzguNEMyMzguNC0yMDIuMiwxMDAtMjk4LjMsMTAwLTQzMWMwLTYxLjUsMTM4LjQtMzE3LjIsMzE1LjMtNTg2LjNjNzk0LTEyMDMuNCwyMDM3LjctMjAxMi44LDM0NzEuOS0yMjU2LjljMTYxOC43LTI3Ni44LDMzMTAuNCwyNjEuNSw0NDc3LjMsMTQyMC43Qzk2NzMuNS01NTAuMiwxMDE5Mi42LDEzMjAuMyw5NzM4LjksMzExMmMtNzYuOSwzMDUuNy0xMTUuNCwzOTAuMi0xODguNCw0MjQuOEM5NDYyLjEsMzU3OS4xLDk0MjEuNywzNTc1LjMsOTM0NC44LDM1MjMuNHoiLz48cGF0aCBkPSJNODM0Ny4xLDMxMTcuOGMtMjc4LjgtMTA3LjctMjc3OS44LTExNTMuNC0yODE4LjItMTE3Ni41Yy0xMDAtNjcuMy03OC44LTE5Mi4yLDQ0LjItMjUzLjhjNDAuNC0yMS4xLDY5Mi4xLTI5NC4xLDE0NDkuNS02MDcuNWMxNDk1LjYtNjE5LDE0NzAuNi02MTEuMywxNjQzLjctNTMyLjVjMTQyLjMsNjUuNCwxODQuNiwxNTMuOCwyNTkuNSw1NDkuOGM1MCwyNjUuMyw3MS4xLDg4Ni4yLDM4LjQsMTE4MC4zYy0yOC44LDI2OS4xLTkyLjMsNTcxLTEzOC40LDY2Ny4xYy01NS43LDExNS4zLTE2NS4zLDE4Ni41LTMwMS44LDE5NC4yQzg0NjQuMywzMTQwLjgsODM4My42LDMxMzMuMSw4MzQ3LjEsMzExNy44eiIvPjxwYXRoIGQ9Ik0yNjI5LjksNzUzLjJDMTgwNy4xLDQxMSwxMjAxLjUsMTQ5LjYsMTE2My4xLDExNi45Yy05Mi4zLTczLjEtMTQ4LTIwMS45LTEzNi41LTMxOS4xYzI1LTI1Ny42LDY1My42LTEwMDkuMywxMTQ5LjYtMTM3NC41YzM2NS4zLTI3MS4xLDQ4NC40LTMyNC45LDY0NC0yOTIuMmM4OC40LDE3LjMsMjA3LjYsMTA3LjYsMjQ4LDE4Ni41Yzc2LjksMTQ2LjEsMTE4NC4yLDI4NTAuOSwxMTg0LjIsMjg4OS40YzAsMjUtMTMuNSw2NS40LTMwLjgsODguNEM0MTYwLjEsMTM4My44LDQxMTUuOSwxMzcwLjMsMjYyOS45LDc1My4yeiIvPjxwYXRoIGQ9Ik01MjQyLjQsMTMwNC45Yy0yNS0yMy4xLTMwLjgtNTMuOC0yMy4xLTEwOS42YzEzLjUtMTI1LDExNTEuNS0yODUwLjksMTIyNi41LTI5NDEuM2M3NS04OC40LDE2Ny4zLTEzMC43LDI4OC40LTEzMC43YzEwNS43LDEuOSwxNTUuNywyNSwzODYuNCwxODAuN2M0MzguMywyOTIuMiw4NTkuMyw3MTksMTE1Ny4zLDExNjguOGMxMzguNCwyMDkuNiwxNzMsMjk5LjksMTU3LjYsNDExLjRDODQxOC4yLTguMSw4MzMxLjcsMTE1LDgyMzMuNywxNjNjLTQwLjQsMjEuMS02OTAuMSwyOTQuMS0xNDQ1LjYsNjA3LjVDNTM3NywxMzUzLDUzMTMuNSwxMzc2LjEsNTI0Mi40LDEzMDQuOXoiLz48cGF0aCBkPSJNNDY3OS4yLDEwODEuOWMtMjUtMTEuNS02My40LTU1LjgtODQuNi05OGMtMjMuMS00NC4yLTI5Ni02OTIuMS02MDcuNS0xNDQzLjdjLTUyNi43LTEyNjYuOS01NjcuMS0xMzcyLjYtNTY5LTE0ODQuMWMtMS45LTEwMS45LDUuOC0xMjguOCw1NS43LTE5OS45YzgwLjctMTE1LjMsMTQ0LjItMTQ2LjEsNDA1LjYtMTk5LjljNTY5LTExNS4zLDExNDAtMTE1LjMsMTcwNy4xLDBjMjYxLjQsNTMuOCwzNTUuNiwxMDMuOCw0MTEuNCwyMTcuMmM2MS41LDExOS4yLDY3LjMsMTk5LjksMjUsMzI0LjljLTIxLjEsNjEuNS0yODguNCw3MTcuMS01OTUuOSwxNDU3LjJDNDgwNy45LDExNDcuMyw0ODA5LjksMTE0NS40LDQ2NzkuMiwxMDgxLjl6Ii8+PC9nPjwvZz48L3N2Zz4=">
+    <meta name="msapplication-square150x150logo" content="data:image/svg+xml;base64,PCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj48c3ZnIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCAxMDAwIDEwMDAiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDEwMDAgMTAwMCIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PG1ldGFkYXRhPiBTdmcgVmVjdG9yIEljb25zIDogaHR0cDovL3d3dy5vbmxpbmV3ZWJmb250cy5jb20vaWNvbiA8L21ldGFkYXRhPjxnPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAuMDAwMDAwLDUxMS4wMDAwMDApIHNjYWxlKDAuMTAwMDAwLC0wLjEwMDAwMCkiPjxwYXRoIGQ9Ik05MzQ0LjgsMzUyMy40Yy0xMDEuOS02Ny4zLTEyMS4xLTE1MS45LTczLjEtMzI0LjljMTQ0LjItNTI2LjcsMTkyLjItODY4LjksMTkyLjItMTM3MC43YzAtNjc0LjgtMTE1LjMtMTIzOS45LTM3OC43LTE4NzAuNWMtNDU5LjUtMTA5Ny43LTEzODIuMi0yMDIwLjQtMjQ4OS41LTI0OTEuNGMtMTc4NC03NTcuNC0zODM3LjEtMzU5LjUtNTIwOS43LDEwMDcuM2MtMzMwLjYsMzI4LjgtNTg4LjMsNjY5LTc5NS45LDEwNDcuN2MtOTIuMywxNjkuMi0xMzQuNiwyMTcuMi0yMTUuMywyMzguNEMyMzguNC0yMDIuMiwxMDAtMjk4LjMsMTAwLTQzMWMwLTYxLjUsMTM4LjQtMzE3LjIsMzE1LjMtNTg2LjNjNzk0LTEyMDMuNCwyMDM3LjctMjAxMi44LDM0NzEuOS0yMjU2LjljMTYxOC43LTI3Ni44LDMzMTAuNCwyNjEuNSw0NDc3LjMsMTQyMC43Qzk2NzMuNS01NTAuMiwxMDE5Mi42LDEzMjAuMyw5NzM4LjksMzExMmMtNzYuOSwzMDUuNy0xMTUuNCwzOTAuMi0xODguNCw0MjQuOEM5NDYyLjEsMzU3OS4xLDk0MjEuNywzNTc1LjMsOTM0NC44LDM1MjMuNHoiLz48cGF0aCBkPSJNODM0Ny4xLDMxMTcuOGMtMjc4LjgtMTA3LjctMjc3OS44LTExNTMuNC0yODE4LjItMTE3Ni41Yy0xMDAtNjcuMy03OC44LTE5Mi4yLDQ0LjItMjUzLjhjNDAuNC0yMS4xLDY5Mi4xLTI5NC4xLDE0NDkuNS02MDcuNWMxNDk1LjYtNjE5LDE0NzAuNi02MTEuMywxNjQzLjctNTMyLjVjMTQyLjMsNjUuNCwxODQuNiwxNTMuOCwyNTkuNSw1NDkuOGM1MCwyNjUuMyw3MS4xLDg4Ni4yLDM4LjQsMTE4MC4zYy0yOC44LDI2OS4xLTkyLjMsNTcxLTEzOC40LDY2Ny4xYy01NS43LDExNS4zLTE2NS4zLDE4Ni41LTMwMS44LDE5NC4yQzg0NjQuMywzMTQwLjgsODM4My42LDMxMzMuMSw4MzQ3LjEsMzExNy44eiIvPjxwYXRoIGQ9Ik0yNjI5LjksNzUzLjJDMTgwNy4xLDQxMSwxMjAxLjUsMTQ5LjYsMTE2My4xLDExNi45Yy05Mi4zLTczLjEtMTQ4LTIwMS45LTEzNi41LTMxOS4xYzI1LTI1Ny42LDY1My42LTEwMDkuMywxMTQ5LjYtMTM3NC41YzM2NS4zLTI3MS4xLDQ4NC40LTMyNC45LDY0NC0yOTIuMmM4OC40LDE3LjMsMjA3LjYsMTA3LjYsMjQ4LDE4Ni41Yzc2LjksMTQ2LjEsMTE4NC4yLDI4NTAuOSwxMTg0LjIsMjg4OS40YzAsMjUtMTMuNSw2NS40LTMwLjgsODguNEM0MTYwLjEsMTM4My44LDQxMTUuOSwxMzcwLjMsMjYyOS45LDc1My4yeiIvPjxwYXRoIGQ9Ik01MjQyLjQsMTMwNC45Yy0yNS0yMy4xLTMwLjgtNTMuOC0yMy4xLTEwOS42YzEzLjUtMTI1LDExNTEuNS0yODUwLjksMTIyNi41LTI5NDEuM2M3NS04OC40LDE2Ny4zLTEzMC43LDI4OC40LTEzMC43YzEwNS43LDEuOSwxNTUuNywyNSwzODYuNCwxODAuN2M0MzguMywyOTIuMiw4NTkuMyw3MTksMTE1Ny4zLDExNjguOGMxMzguNCwyMDkuNiwxNzMsMjk5LjksMTU3LjYsNDExLjRDODQxOC4yLTguMSw4MzMxLjcsMTE1LDgyMzMuNywxNjNjLTQwLjQsMjEuMS02OTAuMSwyOTQuMS0xNDQ1LjYsNjA3LjVDNTM3NywxMzUzLDUzMTMuNSwxMzc2LjEsNTI0Mi40LDEzMDQuOXoiLz48cGF0aCBkPSJNNDY3OS4yLDEwODEuOWMtMjUtMTEuNS02My40LTU1LjgtODQuNi05OGMtMjMuMS00NC4yLTI5Ni02OTIuMS02MDcuNS0xNDQzLjdjLTUyNi43LTEyNjYuOS01NjcuMS0xMzcyLjYtNTY5LTE0ODQuMWMtMS45LTEwMS45LDUuOC0xMjguOCw1NS43LTE5OS45YzgwLjctMTE1LjMsMTQ0LjItMTQ2LjEsNDA1LjYtMTk5LjljNTY5LTExNS4zLDExNDAtMTE1LjMsMTcwNy4xLDBjMjYxLjQsNTMuOCwzNTUuNiwxMDMuOCw0MTEuNCwyMTcuMmM2MS41LDExOS4yLDY3LjMsMTk5LjksMjUsMzI0LjljLTIxLjEsNjEuNS0yODguNCw3MTcuMS01OTUuOSwxNDU3LjJDNDgwNy45LDExNDcuMyw0ODA5LjksMTE0NS40LDQ2NzkuMiwxMDgxLjl6Ii8+PC9nPjwvZz48L3N2Zz4=">
+    <meta name="msapplication-square310x310logo" content="data:image/svg+xml;base64,PCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj48c3ZnIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCAxMDAwIDEwMDAiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDEwMDAgMTAwMCIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PG1ldGFkYXRhPiBTdmcgVmVjdG9yIEljb25zIDogaHR0cDovL3d3dy5vbmxpbmV3ZWJmb250cy5jb20vaWNvbiA8L21ldGFkYXRhPjxnPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAuMDAwMDAwLDUxMS4wMDAwMDApIHNjYWxlKDAuMTAwMDAwLC0wLjEwMDAwMCkiPjxwYXRoIGQ9Ik05MzQ0LjgsMzUyMy40Yy0xMDEuOS02Ny4zLTEyMS4xLTE1MS45LTczLjEtMzI0LjljMTQ0LjItNTI2LjcsMTkyLjItODY4LjksMTkyLjItMTM3MC43YzAtNjc0LjgtMTE1LjMtMTIzOS45LTM3OC43LTE4NzAuNWMtNDU5LjUtMTA5Ny43LTEzODIuMi0yMDIwLjQtMjQ4OS41LTI0OTEuNGMtMTc4NC03NTcuNC0zODM3LjEtMzU5LjUtNTIwOS43LDEwMDcuM2MtMzMwLjYsMzI4LjgtNTg4LjMsNjY5LTc5NS45LDEwNDcuN2MtOTIuMywxNjkuMi0xMzQuNiwyMTcuMi0yMTUuMywyMzguNEMyMzguNC0yMDIuMiwxMDAtMjk4LjMsMTAwLTQzMWMwLTYxLjUsMTM4LjQtMzE3LjIsMzE1LjMtNTg2LjNjNzk0LTEyMDMuNCwyMDM3LjctMjAxMi44LDM0NzEuOS0yMjU2LjljMTYxOC43LTI3Ni44LDMzMTAuNCwyNjEuNSw0NDc3LjMsMTQyMC43Qzk2NzMuNS01NTAuMiwxMDE5Mi42LDEzMjAuMyw5NzM4LjksMzExMmMtNzYuOSwzMDUuNy0xMTUuNCwzOTAuMi0xODguNCw0MjQuOEM5NDYyLjEsMzU3OS4xLDk0MjEuNywzNTc1LjMsOTM0NC44LDM1MjMuNHoiLz48cGF0aCBkPSJNODM0Ny4xLDMxMTcuOGMtMjc4LjgtMTA3LjctMjc3OS44LTExNTMuNC0yODE4LjItMTE3Ni41Yy0xMDAtNjcuMy03OC44LTE5Mi4yLDQ0LjItMjUzLjhjNDAuNC0yMS4xLDY5Mi4xLTI5NC4xLDE0NDkuNS02MDcuNWMxNDk1LjYtNjE5LDE0NzAuNi02MTEuMywxNjQzLjctNTMyLjVjMTQyLjMsNjUuNCwxODQuNiwxNTMuOCwyNTkuNSw1NDkuOGM1MCwyNjUuMyw3MS4xLDg4Ni4yLDM4LjQsMTE4MC4zYy0yOC44LDI2OS4xLTkyLjMsNTcxLTEzOC40LDY2Ny4xYy01NS43LDExNS4zLTE2NS4zLDE4Ni41LTMwMS44LDE5NC4yQzg0NjQuMywzMTQwLjgsODM4My42LDMxMzMuMSw4MzQ3LjEsMzExNy44eiIvPjxwYXRoIGQ9Ik0yNjI5LjksNzUzLjJDMTgwNy4xLDQxMSwxMjAxLjUsMTQ5LjYsMTE2My4xLDExNi45Yy05Mi4zLTczLjEtMTQ4LTIwMS45LTEzNi41LTMxOS4xYzI1LTI1Ny42LDY1My42LTEwMDkuMywxMTQ5LjYtMTM3NC41YzM2NS4zLTI3MS4xLDQ4NC40LTMyNC45LDY0NC0yOTIuMmM4OC40LDE3LjMsMjA3LjYsMTA3LjYsMjQ4LDE4Ni41Yzc2LjksMTQ2LjEsMTE4NC4yLDI4NTAuOSwxMTg0LjIsMjg4OS40YzAsMjUtMTMuNSw2NS40LTMwLjgsODguNEM0MTYwLjEsMTM4My44LDQxMTUuOSwxMzcwLjMsMjYyOS45LDc1My4yeiIvPjxwYXRoIGQ9Ik01MjQyLjQsMTMwNC45Yy0yNS0yMy4xLTMwLjgtNTMuOC0yMy4xLTEwOS42YzEzLjUtMTI1LDExNTEuNS0yODUwLjksMTIyNi41LTI5NDEuM2M3NS04OC40LDE2Ny4zLTEzMC43LDI4OC40LTEzMC43YzEwNS43LDEuOSwxNTUuNywyNSwzODYuNCwxODAuN2M0MzguMywyOTIuMiw4NTkuMyw3MTksMTE1Ny4zLDExNjguOGMxMzguNCwyMDkuNiwxNzMsMjk5LjksMTU3LjYsNDExLjRDODQxOC4yLTguMSw4MzMxLjcsMTE1LDgyMzMuNywxNjNjLTQwLjQsMjEuMS02OTAuMSwyOTQuMS0xNDQ1LjYsNjA3LjVDNTM3NywxMzUzLDUzMTMuNSwxMzc2LjEsNTI0Mi40LDEzMDQuOXoiLz48cGF0aCBkPSJNNDY3OS4yLDEwODEuOWMtMjUtMTEuNS02My40LTU1LjgtODQuNi05OGMtMjMuMS00NC4yLTI5Ni02OTIuMS02MDcuNS0xNDQzLjdjLTUyNi43LTEyNjYuOS01NjcuMS0xMzcyLjYtNTY5LTE0ODQuMWMtMS45LTEwMS45LDUuOC0xMjguOCw1NS43LTE5OS45YzgwLjctMTE1LjMsMTQ0LjItMTQ2LjEsNDA1LjYtMTk5LjljNTY5LTExNS4zLDExNDAtMTE1LjMsMTcwNy4xLDBjMjYxLjQsNTMuOCwzNTUuNiwxMDMuOCw0MTEuNCwyMTcuMmM2MS41LDExOS4yLDY3LjMsMTk5LjksMjUsMzI0LjljLTIxLjEsNjEuNS0yODguNCw3MTcuMS01OTUuOSwxNDU3LjJDNDgwNy45LDExNDcuMyw0ODA5LjksMTE0NS40LDQ2NzkuMiwxMDgxLjl6Ii8+PC9nPjwvZz48L3N2Zz4=">
+    <meta name="msapplication-wide310x150logo" content="data:image/svg+xml;base64,PCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj48c3ZnIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCAxMDAwIDEwMDAiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDEwMDAgMTAwMCIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PG1ldGFkYXRhPiBTdmcgVmVjdG9yIEljb25zIDogaHR0cDovL3d3dy5vbmxpbmV3ZWJmb250cy5jb20vaWNvbiA8L21ldGFkYXRhPjxnPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAuMDAwMDAwLDUxMS4wMDAwMDApIHNjYWxlKDAuMTAwMDAwLC0wLjEwMDAwMCkiPjxwYXRoIGQ9Ik05MzQ0LjgsMzUyMy40Yy0xMDEuOS02Ny4zLTEyMS4xLTE1MS45LTczLjEtMzI0LjljMTQ0LjItNTI2LjcsMTkyLjItODY4LjksMTkyLjItMTM3MC43YzAtNjc0LjgtMTE1LjMtMTIzOS45LTM3OC43LTE4NzAuNWMtNDU5LjUtMTA5Ny43LTEzODIuMi0yMDIwLjQtMjQ4OS41LTI0OTEuNGMtMTc4NC03NTcuNC0zODM3LjEtMzU5LjUtNTIwOS43LDEwMDcuM2MtMzMwLjYsMzI4LjgtNTg4LjMsNjY5LTc5NS45LDEwNDcuN2MtOTIuMywxNjkuMi0xMzQuNiwyMTcuMi0yMTUuMywyMzguNEMyMzguNC0yMDIuMiwxMDAtMjk4LjMsMTAwLTQzMWMwLTYxLjUsMTM4LjQtMzE3LjIsMzE1LjMtNTg2LjNjNzk0LTEyMDMuNCwyMDM3LjctMjAxMi44LDM0NzEuOS0yMjU2LjljMTYxOC43LTI3Ni44LDMzMTAuNCwyNjEuNSw0NDc3LjMsMTQyMC43Qzk2NzMuNS01NTAuMiwxMDE5Mi42LDEzMjAuMyw5NzM4LjksMzExMmMtNzYuOSwzMDUuNy0xMTUuNCwzOTAuMi0xODguNCw0MjQuOEM5NDYyLjEsMzU3OS4xLDk0MjEuNywzNTc1LjMsOTM0NC44LDM1MjMuNHoiLz48cGF0aCBkPSJNODM0Ny4xLDMxMTcuOGMtMjc4LjgtMTA3LjctMjc3OS44LTExNTMuNC0yODE4LjItMTE3Ni41Yy0xMDAtNjcuMy03OC44LTE5Mi4yLDQ0LjItMjUzLjhjNDAuNC0yMS4xLDY5Mi4xLTI5NC4xLDE0NDkuNS02MDcuNWMxNDk1LjYtNjE5LDE0NzAuNi02MTEuMywxNjQzLjctNTMyLjVjMTQyLjMsNjUuNCwxODQuNiwxNTMuOCwyNTkuNSw1NDkuOGM1MCwyNjUuMyw3MS4xLDg4Ni4yLDM4LjQsMTE4MC4zYy0yOC44LDI2OS4xLTkyLjMsNTcxLTEzOC40LDY2Ny4xYy01NS43LDExNS4zLTE2NS4zLDE4Ni41LTMwMS44LDE5NC4yQzg0NjQuMywzMTQwLjgsODM4My42LDMxMzMuMSw4MzQ3LjEsMzExNy44eiIvPjxwYXRoIGQ9Ik0yNjI5LjksNzUzLjJDMTgwNy4xLDQxMSwxMjAxLjUsMTQ5LjYsMTE2My4xLDExNi45Yy05Mi4zLTczLjEtMTQ4LTIwMS45LTEzNi41LTMxOS4xYzI1LTI1Ny42LDY1My42LTEwMDkuMywxMTQ5LjYtMTM3NC41YzM2NS4zLTI3MS4xLDQ4NC40LTMyNC45LDY0NC0yOTIuMmM4OC40LDE3LjMsMjA3LjYsMTA3LjYsMjQ4LDE4Ni41Yzc2LjksMTQ2LjEsMTE4NC4yLDI4NTAuOSwxMTg0LjIsMjg4OS40YzAsMjUtMTMuNSw2NS40LTMwLjgsODguNEM0MTYwLjEsMTM4My44LDQxMTUuOSwxMzcwLjMsMjYyOS45LDc1My4yeiIvPjxwYXRoIGQ9Ik01MjQyLjQsMTMwNC45Yy0yNS0yMy4xLTMwLjgtNTMuOC0yMy4xLTEwOS42YzEzLjUtMTI1LDExNTEuNS0yODUwLjksMTIyNi41LTI5NDEuM2M3NS04OC40LDE2Ny4zLTEzMC43LDI4OC40LTEzMC43YzEwNS43LDEuOSwxNTUuNywyNSwzODYuNCwxODAuN2M0MzguMywyOTIuMiw4NTkuMyw3MTksMTE1Ny4zLDExNjguOGMxMzguNCwyMDkuNiwxNzMsMjk5LjksMTU3LjYsNDExLjRDODQxOC4yLTguMSw4MzMxLjcsMTE1LDgyMzMuNywxNjNjLTQwLjQsMjEuMS02OTAuMSwyOTQuMS0xNDQ1LjYsNjA3LjVDNTM3NywxMzUzLDUzMTMuNSwxMzc2LjEsNTI0Mi40LDEzMDQuOXoiLz48cGF0aCBkPSJNNDY3OS4yLDEwODEuOWMtMjUtMTEuNS02My40LTU1LjgtODQuNi05OGMtMjMuMS00NC4yLTI5Ni02OTIuMS02MDcuNS0xNDQzLjdjLTUyNi43LTEyNjYuOS01NjcuMS0xMzcyLjYtNTY5LTE0ODQuMWMtMS45LTEwMS45LDUuOC0xMjguOCw1NS43LTE5OS45YzgwLjctMTE1LjMsMTQ0LjItMTQ2LjEsNDA1LjYtMTk5LjljNTY5LTExNS4zLDExNDAtMTE1LjMsMTcwNy4xLDBjMjYxLjQsNTMuOCwzNTUuNiwxMDMuOCw0MTEuNCwyMTcuMmM2MS41LDExOS4yLDY3LjMsMTk5LjksMjUsMzI0LjljLTIxLjEsNjEuNS0yODguNCw3MTcuMS01OTUuOSwxNDU3LjJDNDgwNy45LDExNDcuMyw0ODA5LjksMTE0NS40LDQ2NzkuMiwxMDgxLjl6Ii8+PC9nPjwvZz48L3N2Zz4=">
+    <meta name="msapplication-config" content="none">
+
+    <link rel="manifest" href="./?manifest" />
+
+
+    <style type="text/css" id="default_styles">
+
+      html, body {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        margin: 0;
+      }
+      body > *:not(script) {
+        display: block;
+        padding: 2px;
+        outline: solid 2px #333;
+      }
+      body > header {
+        height: 50px;
+        outline-color: blue;
+      }
+      body > header > nav,
+      body > header nav > ul,
+      body > header nav > ul > li {
+        height: 100%;
+        width: 100%;
+      }
+      body > header > nav {
+        background: blue;
+      }
+      body > header > nav > ul {
+        padding: 0;
+        margin: 0;
+      }
+      body > header > nav > ul li {
+        display: inline-block;
+        float: left;
+        width: 20%;
+        padding: 0;
+        margin: 0;
+        outline: solid 2px orange;
+      }
+
+    </style>
+
+  </head>
+
+
+<body id="web3_webapp">
+<?
+if (substr($_SERVER['REQUEST_URI'], strpos($_SERVER['REQUEST_URI'], "?") + 1) === "svg_png") {
+        $js = <<< JS_DATA
+            <script>
+                function execute_svg_png(list, svg_data){
+                    let svg_elem = new DOMParser().parseFromString(svg_data, "image/svg+xml")
+                    svg_elem.firstElementChild.id = "svg_size_elem"
+
+                    var image_width = (svg_elem.firstElementChild.getAttribute("width")) ? svg_elem.firstElementChild.getAttribute("width") : 0
+                    var image_height = (svg_elem.firstElementChild.getAttribute("height")) ? svg_elem.firstElementChild.getAttribute("height") : 0
+
+                    var image_info = list.shift(1)
+                    var canvas = document.createElement("canvas")
+                    var ctx = canvas.getContext("2d")
+                    var DOMURL = self.URL || self.webkitURL || self
+                    var img = new Image();
+                    var svg = new Blob([svg_data], {type: "image/svg+xml;charset=utf-8"})
+                    var url = DOMURL.createObjectURL(svg)
+                    
+                    var x_offset = 0
+                    var y_offset = 0
+
+                    img.onload = function() {
+                        
+                        canvas.width = image_info[1]
+                        canvas.height = image_info[2]
+
+                        if (!image_width && !image_height){
+                            svg_elem.firstElementChild.style.width = canvas.width
+                            svg_elem.firstElementChild.style.height = "auto"
+                            svg_elem.firstElementChild.style.padding = 0
+                            svg_elem.firstElementChild.style.visibility = "hidden"
+                            svg_elem.firstElementChild.style.position = "fixed"
+                            svg_elem.firstElementChild.style.top = "-10000px"
+                            
+                            document.body.append(svg_elem.firstElementChild)
+                            svg_elem = document.getElementById("svg_size_elem")
+                            var svg_dimensions = svg_elem.getBoundingClientRect()
+                            
+                            if(svg_dimensions.height >= (canvas.height + 2)){
+                                svg_elem.style.width = "auto"
+                                svg_elem.style.height = canvas.height
+                                svg_dimensions = svg_elem.getBoundingClientRect()
+                            }
+
+                            image_height = svg_dimensions.height
+                            image_width = svg_dimensions.width
+                            svg_elem.remove()
+                        }
+                        
+                        x_offset = Math.round((canvas.width - image_width) / 2)
+                        y_offset = Math.round((canvas.height - image_height) / 2)
+
+                        ctx.drawImage(img, x_offset, y_offset)
+
+                        canvas.toBlob(function(blob){
+
+                            var form_data = new FormData()
+                            form_data.append('png_name', image_info[0])
+                            form_data.append('png_data', blob)
+
+                            fetch(window.location.href.substring(0, window.location.href.indexOf('?')) + '?png_write', {
+                                method: 'POST',
+                                body: form_data
+                            })
+                            .then(function(){
+                                if(list[0])
+                                    execute_svg_png(list, svg_data)
+                                else {
+                                    form_data = new FormData()
+                                    form_data.append('svg_data', svg)
+        
+                                    fetch(window.location.href.substring(0, window.location.href.indexOf('?')) + '?svg_write', {
+                                        method: 'POST',
+                                        body: form_data
+                                    })
+                                    .then(function(){ window.location.replace(window.location.href.substring(0, window.location.href.indexOf('?'))) })
+                                }
+                            })
+
+                        }, "image/png")
+                        
+                        DOMURL.revokeObjectURL(png)
+                        
+                    }
+                    img.src = url
+                }
+                (async function(){
+                    let svg_data_request = await fetch('./?icon_svg')
+                    let svg_data = await svg_data_request.text()
+
+                    let dimensions = new Array(
+                        ['icon_png_sq_sm', 76, 76],
+                        ['icon_png_sq_lg', 180, 180],
+                        ['icon_png_banner', 1857, 57],
+                        ['icon_png_opengraph', 1200, 630],
+                        ['icon_png_twitter', 1200, 675],
+                        ['splash_png_320x568', 320, 568],
+                        ['splash_png_568x320', 568, 320],
+                        ['splash_png_320x460', 320, 460],
+                        ['splash_png_640x920', 640, 920],
+                        
+                        ['splash_png_2048x2732', 2048, 2732],
+                        ['splash_png_1668x2388', 1668, 2388],
+                        ['splash_png_1536x2048', 1536, 2048],
+                        ['splash_png_1668x2224', 1668, 2224],
+                        ['splash_png_1620x2160', 1620, 2160],
+                        ['splash_png_1284x2778', 1284, 2778],
+                        ['splash_png_1170x2532', 1170, 2532],
+                        ['splash_png_1125x2436', 1125, 2436],
+                        ['splash_png_1242x2688', 1242, 2688],
+                        ['splash_png_828x1792', 828, 1792],
+                        ['splash_png_1080x1920', 1080, 1920],
+                        ['splash_png_750x1334', 750, 1334],
+                        ['splash_png_640x1136', 640, 1136],
+                        ['splash_png_768x1024', 768, 1024],
+                        
+                        ['splash_png_2732x2048', 2732, 2048],
+                        ['splash_png_2388x1668', 2388, 1668],
+                        ['splash_png_2048x1536', 2048, 1536],
+                        ['splash_png_2224x1668', 2224, 1668],
+                        ['splash_png_2160x1620', 2160, 1620],
+                        ['splash_png_2778x1284', 2778, 1284],
+                        ['splash_png_2532x1170', 2532, 1170],
+                        ['splash_png_2436x1125', 2436, 1125],
+                        ['splash_png_2688x1242', 2688, 1242],
+                        ['splash_png_1792x828', 1792, 828],
+                        ['splash_png_1920x1080', 1920, 1080],
+                        ['splash_png_1334x750', 1334, 750],
+                        ['splash_png_1136x640', 1136, 640],
+                        ['splash_png_1024x768', 1024, 768]
+                    )
+
+                    execute_svg_png(dimensions, svg_data)
+
+                })()
+            </script>
+        JS_DATA;
+        echo $js;
+    }
+?>
+<img width="200" src="https://pwa.thedesignlabproject.com?icon_png_opengraph">
+  <header id="menu">
+    <nav>
+      <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </nav>
+  </header>
+  
+  
+
+  <main id="interface">
+    <section></section>
+    <footer></footer>
+  </main>
+
+  <footer id="footer">
+    <script type="text/javascript">
+
+    </script>
+  </footer>
+
+</body>
+</html>
+
+<? } ?>

@@ -1,0 +1,550 @@
+<script type="text/javascript">
+
+let head_tree = Array(
+  ["meta",
+    {
+      "charset": "utf-8"
+    }
+  ],
+  ["meta",
+    {
+      "name": "viewport",
+      "content": "width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,minimal-ui"
+    }
+  ],
+  ["meta",
+    {
+      "content": "IE=edge,chrome=1",
+      "http-equiv": "X-UA-Compatible"
+    }
+  ],
+  ["meta",
+    {
+      "name": "renderer",
+      "content": "webkit|ie-comp|ie-stand"
+    }
+  ],
+  ["meta",
+    {
+      "http-equiv": "Pragma",
+      "content": "no-cache"
+    }
+  ],
+  ["meta",
+    {
+      "http-equiv": "Cache-Control",
+      "content": "no-cache"
+    }
+  ],
+  ["meta",
+    {
+      "http-equiv": "Expires",
+      "content": "0"
+    }
+  ],
+  ["meta",
+    {
+      "http-equiv": "x-dns-prefetch-control",
+      "content": "off"
+    }
+  ],
+  ["title",
+    {
+      "web3_webapp" : null
+    }
+  ],
+  ["link",
+    {
+      "rel": "base",
+      "href": "./"
+    }
+  ],
+  ["link",
+    {
+      "rel": "canonical",
+      "href": "./"
+    }
+  ],
+  ["link",
+    {
+      "rel": "amphtml",
+      "href": "./?amp=1"
+    }
+  ],
+  ["link",
+    {
+      "rel": "index",
+      "href": "./"
+    }
+  ],
+  ["link",
+    {
+      "rel": "self",
+      "type": "application/atom+xml",
+      "href": "./"
+    }
+  ],
+  ["link",
+    {
+      "rel": "bookmark",
+      "title": "web3_webapp",
+      "href": "./"
+    }
+  ],
+  ["meta",
+    {
+      "name": "author",
+      "content": "radmadical"
+    }
+  ],
+  ["meta",
+    {
+      "name": "copyright",
+      "content": "none"
+    }
+  ],
+  ["meta",
+    {
+      "name": "owner",
+      "content": "user"
+    }
+  ],
+  ["meta",
+    {
+      "name": "robots",
+      "content": "index,follow"
+    }
+  ],
+  ["meta",
+    {
+      "name": "googlebot",
+      "content": "index,follow"
+    }
+  ],
+  ["meta",
+    {
+      "name": "description",
+      "content": "Web 3.0 PWA boilerplate"
+    }
+  ],
+  ["meta",
+    {
+      "name": "subject",
+      "content": "Web 3.0 PWA boilerplates"
+    }
+  ],
+  ["meta",
+    {
+      "name": "topic",
+      "content": "Decentralized Web"
+    }
+  ],
+  ["meta",
+    {
+      "name": "keywords",
+      "content": "web3, pwa, boilerplate"
+    }
+  ],
+  ["meta",
+    {
+      "name": "news_keywords",
+      "content": "web3, pwa, boilerplate"
+    }
+  ],
+  ["meta",
+    {
+      "name": "url",
+      "content": "./"
+    }
+  ],
+  ["meta",
+    {
+      "itemprop": "name",
+      "content": "web3_webapp"
+    }
+  ],
+  ["meta",
+    {
+      "itemprop": "description",
+      "content": "Web 3.0 PWA boilerplate"
+    }
+  ],
+  ["meta",
+    {
+      "itemprop": "image",
+      "content": "https://thedesignlabproject.com/logo.svg"
+    }
+  ],
+  ["meta",
+    {
+      "property": "og:title",
+      "content": "web3_webapp"
+    }
+  ],
+  ["meta",
+    {
+      "property": "og:type",
+      "content": "website"
+    }
+  ],
+  ["meta",
+    {
+      "property": "og:url",
+      "content": "./"
+    }
+  ],
+  ["meta",
+    {
+      "property": "og:description",
+      "content": "Web 3.0 PWA boilerplate"
+    }
+  ],
+  ["meta",
+    {
+      "property": "og:site_name",
+      "content": "web3_webapp"
+    }
+  ],
+  ["meta",
+    {
+      "property": "og:locale",
+      "content": "en_US"
+    }
+  ],
+  ["meta",
+    {
+      "property": "og:image",
+      "content": "https://thedesignlabproject.com/logo.svg"
+    }
+  ],
+  ["meta",
+    {
+      "property": "og:image:type",
+      "content": "image/svg+xml"
+    }
+  ],
+  ["meta",
+    {
+      "property": "og:image:width",
+      "content": "1200"
+    }
+  ],
+  ["meta",
+    {
+      "property": "og:image:height",
+      "content": "630"
+    }
+  ],
+  ["meta",
+    {
+      "property": "og:image:alt",
+      "content": "Web 3.0 PWA boilerplate logo"
+    }
+  ],
+  ["meta",
+    {
+      "name": "twitter:card",
+      "content": "app"
+    }
+  ],
+  ["meta",
+    {
+      "name": "twitter:url",
+      "content": "./"
+    }
+  ],
+  ["meta",
+    {
+      "name": "twitter:title",
+      "content": "web3_webapp"
+    }
+  ],
+  ["meta",
+    {
+      "name": "twitter:app:name:iphone",
+      "content": "web3_webapp"
+    }
+  ],
+  ["meta",
+    {
+      "name": "twitter:app:name:ipad",
+      "content": "web3_webapp"
+    }
+  ],
+  ["meta",
+    {
+      "name": "twitter:app:name:googleplay",
+      "content": "web3_webapp"
+    }
+  ],
+  ["meta",
+    {
+      "name": "twitter:description",
+      "content": "Web 3.0 PWA boilerplate"
+    }
+  ],
+  ["meta",
+    {
+      "name": "twitter:creator",
+      "content": "radmadical"
+    }
+  ],
+  ["meta",
+    {
+      "name": "twitter:image",
+      "content": "https://thedesignlabproject.com/logo.svg"
+    }
+  ],
+  ["meta",
+    {
+      "name": "twitter:image:alt",
+      "content": "Web 3.0 PWA boilerplate logo"
+    }
+  ],
+  ["meta",
+    {
+      "name": "HandheldFriendly",
+      "content": "true"
+    }
+  ],
+  ["meta",
+    {
+      "name": "MobileOptimized",
+      "content": "480"
+    }
+  ],
+  ["meta",
+    {
+      "name": "mobile-web-app-capable",
+      "content": "yes"
+    }
+  ],
+  ["meta",
+    {
+      "name": "apple-mobile-web-app-capable",
+      "content": "yes"
+    }
+  ],
+  ["meta",
+    {
+      "name": "apple-mobile-web-app-title",
+      "content": "web3_webapp"
+    }
+  ],
+  ["meta",
+    {
+      "name": "apple-touch-fullscreen",
+      "content": "yes"
+    }
+  ],
+  ["meta",
+    {
+      "name": "application-name",
+      "content": "web3_webapp"
+    }
+  ],
+  ["meta",
+    {
+      "name": "apple-mobile-web-app-status-bar-style",
+      "content": "#f2f2f2"
+    }
+  ],
+  ["meta",
+    {
+      "name": "msapplication-TileColor",
+      "content": "#f2f2f2"
+    }
+  ],
+  ["meta",
+    {
+      "name": "theme-color",
+      "content": "#f2f2f2"
+    }
+  ],
+  ["meta",
+    {
+      "name": "mssmarttagspreventparsing",
+      "content": "true"
+    }
+  ],
+  ["meta",
+    {
+      "http-equiv": "cleartype",
+      "content" :"on"
+    }
+  ],
+  ["meta",
+    {
+      "name": "msapplication-tooltip",
+      "content": "web3_webapp"
+    }
+  ],
+  ["meta",
+    {
+      "name": "msapplication-starturl",
+      "content": "./"
+    }
+  ],
+  ["meta",
+    {
+      "name": "msapplication-window",
+      "content": "width=1024;height=768"
+    }
+  ],
+  ["meta",
+    {
+      "name": "msapplication-navbutton-color",
+      "content": "#f2f2f2"
+    }
+  ],
+  ["link",
+    {
+      "rel": "shortcut icon",
+      "type": "image/svg+xml",
+      "href": "https://thedesignlabproject.com/logo.svg"
+    }
+  ],
+  ["link",
+    {
+      "rel": "icon",
+      "type": "image/svg+xml",
+      "sizes": "16x16 32x32 96x96 192x192",
+      "href": "https://thedesignlabproject.com/logo.svg"
+    }
+  ],
+  ["link",
+    {
+      "rel": "mask-icon",
+      "href": "https://thedesignlabproject.com/logo.svg",
+      "color": "#de11e7"
+    }
+  ],
+  ["link",
+    {
+      "rel": "apple-touch-icon",
+      "type": "image/svg+xml",
+      "sizes": "57x57 60x60 72x72 76x76 114x114 120x120 144x144 152x152 180x180 1857x57",
+      "href": "https://thedesignlabproject.com/logo.svg"
+    }
+  ],
+  ["link",
+    {
+      "rel": "apple-touch-icon-precomposed",
+      "type": "image/svg+xml",
+      "sizes": "57x57 60x60 72x72 76x76 114x114 120x120 144x144 152x152 180x180 1857x57",
+      "href": "https://thedesignlabproject.com/logo.svg"
+    }
+  ],
+  ["link",
+    {
+      "rel": "apple-touch-startup-image",
+      "type": "image/svg+xml",
+      "href": "https://thedesignlabproject.com/logo.svg"
+    }
+  ],
+  ["link",
+    {
+      "rel": "image_src",
+      "type": "image/svg+xml",
+      "data-width": "300",
+      "data-height": "250",
+      "href": "https://thedesignlabproject.com/logo.svg"
+    }
+  ],
+  ["link",
+    {
+      "rel": "fluid-icon",
+      "type": "image/svg+xml",
+      "href": "https://thedesignlabproject.com/logo.svg"
+    }
+  ],
+
+
+  /*["link",
+    {
+      "rel": "manifest",
+      "href": 'data:application/manifest+json,{ "lang": "en", "dir": "ltr", "name": "web3_webapp", "short_name": "web3_webapp", "icons": [{ "src": "https://thedesignlabproject.com/logo.svg", "sizes": "36x36", "type": "image/svg+xml" }, { "src": "https://thedesignlabproject.com/logo.svg", "sizes": "48x48", "type": "image/svg+xml" }, { "src": "https://thedesignlabproject.com/logo.svg", "sizes": "72x72", "type": "image/svg+xml" }, { "src": "https://thedesignlabproject.com/logo.svg", "sizes": "96x96", "type": "image/svg+xml" }, { "src": "https://thedesignlabproject.com/logo.svg", "sizes": "144x144", "type": "image/svg+xml" }, { "src": "https://thedesignlabproject.com/logo.svg", "sizes": "192x192", "type": "image/svg+xml" }, { "src": "https://thedesignlabproject.com/logo.svg", "sizes": "256x256", "type": "image/svg+xml" }, { "src": "https://thedesignlabproject.com/logo.svg", "sizes": "196x196", "type": "image/svg+xml", "purpose": "any maskable" }], "scope": "/", "id": "web3_webapp", "start_url": "./", "theme_color": "#f2f2f2", "background_color": "#f2f2f2", "display": "standalone" }'
+    }
+  ],*/
+  ["link",
+    {
+      "rel": "manifest",
+      "href": "./?manifest=true"
+    }
+  ],
+
+
+  ["meta",
+    {
+      "name": "msapplication-TileImage",
+      "content": "https://thedesignlabproject.com/logo.svg"
+    }
+  ],
+  ["meta",
+    {
+      "name": "msapplication-square70x70logo",
+      "content": "https://thedesignlabproject.com/logo.svg"
+    }
+  ],
+  ["meta",
+    {
+      "name": "msapplication-square150x150logo",
+      "content": "https://thedesignlabproject.com/logo.svg"
+    }
+  ],
+  ["meta",
+    {
+      "name": "msapplication-square310x310logo",
+      "content": "https://thedesignlabproject.com/logo.svg"
+    }
+  ],
+  ["meta",
+    {
+      "name": "msapplication-wide310x150logo",
+      "content": "https://thedesignlabproject.com/logo.svg"
+    }
+  ],
+  ["meta",
+    {
+      "name": "msapplication-config",
+      "content": "none"
+    }
+  ]
+)
+
+
+
+
+
+
+
+
+
+
+
+
+
+var html_main = document.createElement("html")
+html_main.setAttribute("lang", "en")
+html_main.setAttribute("dir", "ltr")
+
+var head_main = document.createElement("head")
+
+for(var head_node of head_tree){
+    var current_node = document.createElement(head_node[0])
+
+    for(var attribute in head_node[1]){
+    	if(typeof(head_node[1][attribute]) !== 'object')
+        	current_node.setAttribute(attribute, head_node[1][attribute])
+        else
+        	current_node.innerHTML = attribute
+    }
+
+    head_main.append(current_node)
+}
+
+html_main.append(head_main)
+document.documentElement.replaceWith(html_main)
+//console.log(html_main)
+
+</script>

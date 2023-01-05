@@ -1,0 +1,297 @@
+[19-Feb-2022 22:55:18 America/Boise] PHP Parse error:  syntax error, unexpected token "echo" in /home1/thedesm5/public_html/pwa/index.html on line 196
+[20-Feb-2022 01:03:57 America/Boise] PHP Warning:  Undefined array key "REQUEST URI" in /home1/thedesm5/public_html/pwa/index.html on line 4
+[20-Feb-2022 01:04:37 America/Boise] PHP Warning:  Undefined array key "REQUEST URI" in /home1/thedesm5/public_html/pwa/index.html on line 221
+[20-Feb-2022 01:26:53 America/Boise] PHP Warning:  Undefined variable $str in /home1/thedesm5/public_html/pwa/index.html on line 197
+[20-Feb-2022 01:27:10 America/Boise] PHP Warning:  Undefined variable $str in /home1/thedesm5/public_html/pwa/index.html on line 197
+[20-Feb-2022 01:27:35 America/Boise] PHP Warning:  Undefined variable $str in /home1/thedesm5/public_html/pwa/index.html on line 197
+[20-Feb-2022 01:30:25 America/Boise] PHP Parse error:  syntax error, unexpected token ":" in /home1/thedesm5/public_html/pwa/index.html on line 5
+[20-Feb-2022 01:44:10 America/Boise] PHP Parse error:  syntax error, unexpected token "else", expecting "," or ";" in /home1/thedesm5/public_html/pwa/index.html on line 50
+[20-Feb-2022 11:18:57 America/Boise] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/thedesm5/public_html/pwa/index.html:1) in /home1/thedesm5/public_html/pwa/index.html on line 53
+[20-Feb-2022 11:19:06 America/Boise] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/thedesm5/public_html/pwa/index.html:1) in /home1/thedesm5/public_html/pwa/index.html on line 53
+[20-Feb-2022 11:35:12 America/Boise] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/thedesm5/public_html/pwa/index.html:1) in /home1/thedesm5/public_html/pwa/index.html on line 53
+[20-Feb-2022 11:35:27 America/Boise] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/thedesm5/public_html/pwa/index.html:1) in /home1/thedesm5/public_html/pwa/index.html on line 53
+[20-Feb-2022 16:51:24 America/Boise] PHP Parse error:  Unterminated comment starting line 175 in /home1/thedesm5/public_html/pwa/index.html on line 175
+[20-Feb-2022 16:51:35 America/Boise] PHP Parse error:  Unterminated comment starting line 175 in /home1/thedesm5/public_html/pwa/index.html on line 175
+[21-Feb-2022 14:44:56 America/Boise] PHP Parse error:  syntax error, unexpected token "}" in /home1/thedesm5/public_html/pwa/index.html on line 64
+[21-Feb-2022 14:45:00 America/Boise] PHP Parse error:  syntax error, unexpected token "}" in /home1/thedesm5/public_html/pwa/index.html on line 64
+[21-Feb-2022 14:45:06 America/Boise] PHP Parse error:  syntax error, unexpected token "}" in /home1/thedesm5/public_html/pwa/index.html on line 64
+[21-Feb-2022 14:47:00 America/Boise] PHP Parse error:  syntax error, unexpected token "}" in /home1/thedesm5/public_html/pwa/index.html on line 64
+[21-Feb-2022 14:47:03 America/Boise] PHP Parse error:  syntax error, unexpected token "}" in /home1/thedesm5/public_html/pwa/index.html on line 64
+[21-Feb-2022 14:47:43 America/Boise] PHP Parse error:  syntax error, unexpected token "}" in /home1/thedesm5/public_html/pwa/index.html on line 64
+[21-Feb-2022 14:48:12 America/Boise] PHP Parse error:  syntax error, unexpected token "}" in /home1/thedesm5/public_html/pwa/index.html on line 64
+[21-Feb-2022 15:48:04 America/Boise] PHP Parse error:  Invalid body indentation level (expecting an indentation level of at least 4) in /home1/thedesm5/public_html/pwa/index.html on line 52
+[21-Feb-2022 15:48:52 America/Boise] PHP Parse error:  Invalid body indentation level (expecting an indentation level of at least 4) in /home1/thedesm5/public_html/pwa/index.html on line 52
+[21-Feb-2022 15:49:28 America/Boise] PHP Parse error:  Invalid body indentation level (expecting an indentation level of at least 4) in /home1/thedesm5/public_html/pwa/index.html on line 52
+[21-Feb-2022 15:49:30 America/Boise] PHP Parse error:  Invalid body indentation level (expecting an indentation level of at least 4) in /home1/thedesm5/public_html/pwa/index.html on line 52
+[21-Feb-2022 19:41:46 America/Boise] PHP Warning:  Undefined array key "png_data" in /home1/thedesm5/public_html/pwa/index.html on line 74
+[21-Feb-2022 19:41:46 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home1/thedesm5/public_html/pwa/index.html on line 74
+[21-Feb-2022 19:41:46 America/Boise] PHP Fatal error:  Uncaught ValueError: Path cannot be empty in /home1/thedesm5/public_html/pwa/index.html:74
+Stack trace:
+#0 /home1/thedesm5/public_html/pwa/index.html(74): file_get_contents('')
+#1 {main}
+  thrown in /home1/thedesm5/public_html/pwa/index.html on line 74
+[21-Feb-2022 23:55:55 America/Boise] PHP Parse error:  syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting '-' or identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING) in /home1/thedesm5/public_html/pwa/floop.php on line 95
+[22-Feb-2022 00:02:18 America/Boise] PHP Parse error:  syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting '-' or identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING) in /home1/thedesm5/public_html/pwa/floop.php on line 95
+[22-Feb-2022 00:02:41 America/Boise] PHP Parse error:  syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting '-' or identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING) in /home1/thedesm5/public_html/pwa/floop.php on line 95
+[22-Feb-2022 00:05:08 America/Boise] PHP Parse error:  syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting '-' or identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING) in /home1/thedesm5/public_html/pwa/floop.php on line 95
+[22-Feb-2022 00:05:16 America/Boise] PHP Parse error:  syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting '-' or identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING) in /home1/thedesm5/public_html/pwa/floop.php on line 95
+[22-Feb-2022 00:08:16 America/Boise] PHP Parse error:  syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting '-' or identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING) in /home1/thedesm5/public_html/pwa/floop.php on line 95
+[22-Feb-2022 00:08:40 America/Boise] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home1/thedesm5/public_html/pwa/floop.php on line 92
+[22-Feb-2022 00:08:43 America/Boise] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home1/thedesm5/public_html/pwa/floop.php on line 92
+[22-Feb-2022 00:08:44 America/Boise] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home1/thedesm5/public_html/pwa/floop.php on line 92
+[22-Feb-2022 00:15:48 America/Boise] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home1/thedesm5/public_html/pwa/floop.php on line 92
+[22-Feb-2022 00:15:51 America/Boise] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home1/thedesm5/public_html/pwa/floop.php on line 92
+[22-Feb-2022 00:17:17 America/Boise] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home1/thedesm5/public_html/pwa/floop.php on line 92
+[22-Feb-2022 00:23:48 America/Boise] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home1/thedesm5/public_html/pwa/floop.php on line 92
+[22-Feb-2022 00:24:21 America/Boise] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home1/thedesm5/public_html/pwa/floop.php on line 63
+[22-Feb-2022 00:24:23 America/Boise] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home1/thedesm5/public_html/pwa/floop.php on line 63
+[22-Feb-2022 00:28:00 America/Boise] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home1/thedesm5/public_html/pwa/floop.php on line 63
+[22-Feb-2022 00:28:24 America/Boise] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home1/thedesm5/public_html/pwa/floop.php on line 63
+[22-Feb-2022 00:30:37 America/Boise] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home1/thedesm5/public_html/pwa/floop.php on line 63
+[22-Feb-2022 00:30:55 America/Boise] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home1/thedesm5/public_html/pwa/floop.php on line 63
+[22-Feb-2022 00:30:59 America/Boise] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home1/thedesm5/public_html/pwa/floop.php on line 63
+[22-Feb-2022 00:50:08 America/Boise] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home1/thedesm5/public_html/pwa/floop.php on line 63
+[22-Feb-2022 00:50:16 America/Boise] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home1/thedesm5/public_html/pwa/floop.php on line 63
+[22-Feb-2022 00:50:17 America/Boise] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home1/thedesm5/public_html/pwa/floop.php on line 63
+[22-Feb-2022 00:50:24 America/Boise] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home1/thedesm5/public_html/pwa/floop.php on line 63
+[22-Feb-2022 00:50:28 America/Boise] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home1/thedesm5/public_html/pwa/floop.php on line 63
+[22-Feb-2022 00:53:19 America/Boise] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home1/thedesm5/public_html/pwa/floop.php on line 63
+[22-Feb-2022 00:53:43 America/Boise] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home1/thedesm5/public_html/pwa/floop.php on line 63
+[22-Feb-2022 00:56:35 America/Boise] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home1/thedesm5/public_html/pwa/floop.php on line 63
+[22-Feb-2022 00:56:58 America/Boise] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home1/thedesm5/public_html/pwa/floop.php on line 63
+[22-Feb-2022 00:57:34 America/Boise] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home1/thedesm5/public_html/pwa/floop.php on line 63
+[22-Feb-2022 00:57:37 America/Boise] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home1/thedesm5/public_html/pwa/floop.php on line 63
+[22-Feb-2022 00:59:03 America/Boise] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home1/thedesm5/public_html/pwa/floop.php on line 63
+[22-Feb-2022 01:00:15 America/Boise] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home1/thedesm5/public_html/pwa/floop.php on line 63
+[22-Feb-2022 01:00:28 America/Boise] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home1/thedesm5/public_html/pwa/floop.php on line 63
+[22-Feb-2022 01:00:34 America/Boise] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home1/thedesm5/public_html/pwa/floop.php on line 63
+[22-Feb-2022 01:03:27 America/Boise] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home1/thedesm5/public_html/pwa/floop.php on line 63
+[22-Feb-2022 01:03:38 America/Boise] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home1/thedesm5/public_html/pwa/floop.php on line 63
+[22-Feb-2022 01:03:41 America/Boise] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home1/thedesm5/public_html/pwa/floop.php on line 63
+[22-Feb-2022 01:03:42 America/Boise] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home1/thedesm5/public_html/pwa/floop.php on line 63
+[22-Feb-2022 01:05:13 America/Boise] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home1/thedesm5/public_html/pwa/floop.php on line 63
+[22-Feb-2022 01:05:57 America/Boise] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home1/thedesm5/public_html/pwa/floop.php on line 63
+[22-Feb-2022 01:06:39 America/Boise] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home1/thedesm5/public_html/pwa/floop.php on line 63
+[22-Feb-2022 01:06:51 America/Boise] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home1/thedesm5/public_html/pwa/floop.php on line 63
+[22-Feb-2022 01:11:33 America/Boise] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home1/thedesm5/public_html/pwa/floop.php on line 63
+[22-Feb-2022 01:11:37 America/Boise] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home1/thedesm5/public_html/pwa/floop.php on line 63
+[22-Feb-2022 01:13:18 America/Boise] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home1/thedesm5/public_html/pwa/floop.php on line 63
+[22-Feb-2022 01:13:22 America/Boise] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home1/thedesm5/public_html/pwa/floop.php on line 63
+[22-Feb-2022 01:14:17 America/Boise] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home1/thedesm5/public_html/pwa/floop.php on line 63
+[22-Feb-2022 01:15:00 America/Boise] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home1/thedesm5/public_html/pwa/floop.php on line 63
+[22-Feb-2022 01:16:12 America/Boise] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home1/thedesm5/public_html/pwa/floop.php on line 63
+[22-Feb-2022 01:16:46 America/Boise] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home1/thedesm5/public_html/pwa/floop.php on line 63
+[22-Feb-2022 01:20:25 America/Boise] PHP Parse error:  syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting '-' or identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING) in /home1/thedesm5/public_html/pwa/floop.php on line 65
+[22-Feb-2022 01:21:37 America/Boise] PHP Parse error:  syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting '-' or identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING) in /home1/thedesm5/public_html/pwa/floop.php on line 65
+[22-Feb-2022 01:21:40 America/Boise] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home1/thedesm5/public_html/pwa/floop.php on line 61
+[22-Feb-2022 01:22:43 America/Boise] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home1/thedesm5/public_html/pwa/floop.php on line 61
+[22-Feb-2022 01:22:46 America/Boise] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home1/thedesm5/public_html/pwa/floop.php on line 61
+[22-Feb-2022 01:22:48 America/Boise] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home1/thedesm5/public_html/pwa/floop.php on line 61
+[22-Feb-2022 01:23:29 America/Boise] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home1/thedesm5/public_html/pwa/floop.php on line 63
+[22-Feb-2022 01:23:31 America/Boise] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home1/thedesm5/public_html/pwa/floop.php on line 61
+[22-Feb-2022 01:26:02 America/Boise] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home1/thedesm5/public_html/pwa/floop.php on line 61
+[22-Feb-2022 01:26:09 America/Boise] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home1/thedesm5/public_html/pwa/floop.php on line 61
+[22-Feb-2022 01:27:45 America/Boise] PHP Parse error:  syntax error, unexpected token "}" in /home1/thedesm5/public_html/pwa/index.html on line 78
+[22-Feb-2022 01:52:06 America/Boise] PHP Parse error:  syntax error, unexpected token "<", expecting end of file in /home1/thedesm5/public_html/pwa/index.html on line 85
+[22-Feb-2022 01:52:31 America/Boise] PHP Parse error:  syntax error, unexpected token "<", expecting end of file in /home1/thedesm5/public_html/pwa/index.html on line 83
+[22-Feb-2022 01:53:40 America/Boise] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/thedesm5/public_html/pwa/index.html:62) in /home1/thedesm5/public_html/pwa/index.html on line 74
+[22-Feb-2022 01:53:41 America/Boise] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/thedesm5/public_html/pwa/index.html:62) in /home1/thedesm5/public_html/pwa/index.html on line 66
+[22-Feb-2022 01:53:42 America/Boise] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/thedesm5/public_html/pwa/index.html:62) in /home1/thedesm5/public_html/pwa/index.html on line 74
+[22-Feb-2022 01:53:43 America/Boise] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/thedesm5/public_html/pwa/index.html:62) in /home1/thedesm5/public_html/pwa/index.html on line 66
+[22-Feb-2022 01:53:45 America/Boise] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/thedesm5/public_html/pwa/index.html:62) in /home1/thedesm5/public_html/pwa/index.html on line 74
+[22-Feb-2022 01:53:46 America/Boise] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/thedesm5/public_html/pwa/index.html:62) in /home1/thedesm5/public_html/pwa/index.html on line 66
+[22-Feb-2022 01:57:51 America/Boise] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/thedesm5/public_html/pwa/index.html:62) in /home1/thedesm5/public_html/pwa/index.html on line 74
+[22-Feb-2022 01:57:51 America/Boise] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/thedesm5/public_html/pwa/index.html:62) in /home1/thedesm5/public_html/pwa/index.html on line 66
+[22-Feb-2022 01:57:53 America/Boise] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/thedesm5/public_html/pwa/index.html:62) in /home1/thedesm5/public_html/pwa/index.html on line 74
+[22-Feb-2022 01:57:54 America/Boise] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/thedesm5/public_html/pwa/index.html:62) in /home1/thedesm5/public_html/pwa/index.html on line 66
+[22-Feb-2022 01:59:36 America/Boise] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/thedesm5/public_html/pwa/index.html:62) in /home1/thedesm5/public_html/pwa/index.html on line 74
+[22-Feb-2022 01:59:37 America/Boise] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/thedesm5/public_html/pwa/index.html:62) in /home1/thedesm5/public_html/pwa/index.html on line 66
+[22-Feb-2022 02:15:30 America/Boise] PHP Warning:  Undefined array key "png_data" in /home1/thedesm5/public_html/pwa/index.html on line 84
+[22-Feb-2022 02:15:30 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home1/thedesm5/public_html/pwa/index.html on line 84
+[22-Feb-2022 02:15:30 America/Boise] PHP Fatal error:  Uncaught ValueError: Path cannot be empty in /home1/thedesm5/public_html/pwa/index.html:84
+Stack trace:
+#0 /home1/thedesm5/public_html/pwa/index.html(84): file_get_contents('')
+#1 {main}
+  thrown in /home1/thedesm5/public_html/pwa/index.html on line 84
+[22-Feb-2022 02:16:16 America/Boise] PHP Warning:  Undefined array key "png_data" in /home1/thedesm5/public_html/pwa/index.html on line 84
+[22-Feb-2022 02:16:16 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home1/thedesm5/public_html/pwa/index.html on line 84
+[22-Feb-2022 02:16:16 America/Boise] PHP Fatal error:  Uncaught ValueError: Path cannot be empty in /home1/thedesm5/public_html/pwa/index.html:84
+Stack trace:
+#0 /home1/thedesm5/public_html/pwa/index.html(84): file_get_contents('')
+#1 {main}
+  thrown in /home1/thedesm5/public_html/pwa/index.html on line 84
+[22-Feb-2022 02:17:02 America/Boise] PHP Warning:  Undefined array key "png_data" in /home1/thedesm5/public_html/pwa/index.html on line 82
+[22-Feb-2022 02:17:02 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home1/thedesm5/public_html/pwa/index.html on line 82
+[22-Feb-2022 02:17:02 America/Boise] PHP Fatal error:  Uncaught ValueError: Path cannot be empty in /home1/thedesm5/public_html/pwa/index.html:82
+Stack trace:
+#0 /home1/thedesm5/public_html/pwa/index.html(82): file_get_contents('')
+#1 {main}
+  thrown in /home1/thedesm5/public_html/pwa/index.html on line 82
+[22-Feb-2022 02:17:09 America/Boise] PHP Warning:  Undefined array key "png_data" in /home1/thedesm5/public_html/pwa/index.html on line 82
+[22-Feb-2022 02:17:09 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home1/thedesm5/public_html/pwa/index.html on line 82
+[22-Feb-2022 02:17:09 America/Boise] PHP Fatal error:  Uncaught ValueError: Path cannot be empty in /home1/thedesm5/public_html/pwa/index.html:82
+Stack trace:
+#0 /home1/thedesm5/public_html/pwa/index.html(82): file_get_contents('')
+#1 {main}
+  thrown in /home1/thedesm5/public_html/pwa/index.html on line 82
+[22-Feb-2022 02:17:44 America/Boise] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/thedesm5/public_html/pwa/index.html:62) in /home1/thedesm5/public_html/pwa/index.html on line 74
+[22-Feb-2022 02:17:45 America/Boise] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/thedesm5/public_html/pwa/index.html:62) in /home1/thedesm5/public_html/pwa/index.html on line 66
+[22-Feb-2022 02:17:47 America/Boise] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/thedesm5/public_html/pwa/index.html:62) in /home1/thedesm5/public_html/pwa/index.html on line 74
+[22-Feb-2022 02:17:48 America/Boise] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home1/thedesm5/public_html/pwa/index.html:62) in /home1/thedesm5/public_html/pwa/index.html on line 66
+[22-Feb-2022 02:25:18 America/Boise] PHP Warning:  Undefined array key "png_data" in /home1/thedesm5/public_html/pwa/index.html on line 82
+[22-Feb-2022 02:25:18 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home1/thedesm5/public_html/pwa/index.html on line 82
+[22-Feb-2022 02:25:18 America/Boise] PHP Fatal error:  Uncaught ValueError: Path cannot be empty in /home1/thedesm5/public_html/pwa/index.html:82
+Stack trace:
+#0 /home1/thedesm5/public_html/pwa/index.html(82): file_get_contents('')
+#1 {main}
+  thrown in /home1/thedesm5/public_html/pwa/index.html on line 82
+[22-Feb-2022 17:39:55 America/Boise] PHP Warning:  Undefined array key "png_data" in /home1/thedesm5/public_html/pwa/index.html on line 80
+[22-Feb-2022 17:39:55 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home1/thedesm5/public_html/pwa/index.html on line 80
+[22-Feb-2022 17:39:55 America/Boise] PHP Fatal error:  Uncaught ValueError: Path cannot be empty in /home1/thedesm5/public_html/pwa/index.html:80
+Stack trace:
+#0 /home1/thedesm5/public_html/pwa/index.html(80): file_get_contents('')
+#1 {main}
+  thrown in /home1/thedesm5/public_html/pwa/index.html on line 80
+[22-Feb-2022 17:39:56 America/Boise] PHP Warning:  Undefined array key "png_data" in /home1/thedesm5/public_html/pwa/index.html on line 80
+[22-Feb-2022 17:39:56 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home1/thedesm5/public_html/pwa/index.html on line 80
+[22-Feb-2022 17:39:56 America/Boise] PHP Fatal error:  Uncaught ValueError: Path cannot be empty in /home1/thedesm5/public_html/pwa/index.html:80
+Stack trace:
+#0 /home1/thedesm5/public_html/pwa/index.html(80): file_get_contents('')
+#1 {main}
+  thrown in /home1/thedesm5/public_html/pwa/index.html on line 80
+[22-Feb-2022 17:39:58 America/Boise] PHP Warning:  Undefined array key "png_data" in /home1/thedesm5/public_html/pwa/index.html on line 80
+[22-Feb-2022 17:39:58 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home1/thedesm5/public_html/pwa/index.html on line 80
+[22-Feb-2022 17:39:58 America/Boise] PHP Fatal error:  Uncaught ValueError: Path cannot be empty in /home1/thedesm5/public_html/pwa/index.html:80
+Stack trace:
+#0 /home1/thedesm5/public_html/pwa/index.html(80): file_get_contents('')
+#1 {main}
+  thrown in /home1/thedesm5/public_html/pwa/index.html on line 80
+[22-Feb-2022 17:40:00 America/Boise] PHP Warning:  Undefined array key "png_data" in /home1/thedesm5/public_html/pwa/index.html on line 80
+[22-Feb-2022 17:40:00 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home1/thedesm5/public_html/pwa/index.html on line 80
+[22-Feb-2022 17:40:00 America/Boise] PHP Fatal error:  Uncaught ValueError: Path cannot be empty in /home1/thedesm5/public_html/pwa/index.html:80
+Stack trace:
+#0 /home1/thedesm5/public_html/pwa/index.html(80): file_get_contents('')
+#1 {main}
+  thrown in /home1/thedesm5/public_html/pwa/index.html on line 80
+[22-Feb-2022 17:40:02 America/Boise] PHP Warning:  Undefined array key "png_data" in /home1/thedesm5/public_html/pwa/index.html on line 80
+[22-Feb-2022 17:40:02 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home1/thedesm5/public_html/pwa/index.html on line 80
+[22-Feb-2022 17:40:02 America/Boise] PHP Fatal error:  Uncaught ValueError: Path cannot be empty in /home1/thedesm5/public_html/pwa/index.html:80
+Stack trace:
+#0 /home1/thedesm5/public_html/pwa/index.html(80): file_get_contents('')
+#1 {main}
+  thrown in /home1/thedesm5/public_html/pwa/index.html on line 80
+[22-Feb-2022 17:51:19 America/Boise] PHP Warning:  Undefined array key "png_data" in /home1/thedesm5/public_html/pwa/index.html on line 80
+[22-Feb-2022 17:51:19 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home1/thedesm5/public_html/pwa/index.html on line 80
+[22-Feb-2022 17:51:19 America/Boise] PHP Fatal error:  Uncaught ValueError: Path cannot be empty in /home1/thedesm5/public_html/pwa/index.html:80
+Stack trace:
+#0 /home1/thedesm5/public_html/pwa/index.html(80): file_get_contents('')
+#1 {main}
+  thrown in /home1/thedesm5/public_html/pwa/index.html on line 80
+[22-Feb-2022 17:55:08 America/Boise] PHP Warning:  Undefined array key "png_data" in /home1/thedesm5/public_html/pwa/index.html on line 80
+[22-Feb-2022 17:55:08 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home1/thedesm5/public_html/pwa/index.html on line 80
+[22-Feb-2022 17:55:08 America/Boise] PHP Fatal error:  Uncaught ValueError: Path cannot be empty in /home1/thedesm5/public_html/pwa/index.html:80
+Stack trace:
+#0 /home1/thedesm5/public_html/pwa/index.html(80): file_get_contents('')
+#1 {main}
+  thrown in /home1/thedesm5/public_html/pwa/index.html on line 80
+[22-Feb-2022 17:55:10 America/Boise] PHP Warning:  Undefined array key "png_data" in /home1/thedesm5/public_html/pwa/index.html on line 80
+[22-Feb-2022 17:55:10 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home1/thedesm5/public_html/pwa/index.html on line 80
+[22-Feb-2022 17:55:10 America/Boise] PHP Fatal error:  Uncaught ValueError: Path cannot be empty in /home1/thedesm5/public_html/pwa/index.html:80
+Stack trace:
+#0 /home1/thedesm5/public_html/pwa/index.html(80): file_get_contents('')
+#1 {main}
+  thrown in /home1/thedesm5/public_html/pwa/index.html on line 80
+[22-Feb-2022 17:55:11 America/Boise] PHP Warning:  Undefined array key "png_data" in /home1/thedesm5/public_html/pwa/index.html on line 80
+[22-Feb-2022 17:55:11 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home1/thedesm5/public_html/pwa/index.html on line 80
+[22-Feb-2022 17:55:11 America/Boise] PHP Fatal error:  Uncaught ValueError: Path cannot be empty in /home1/thedesm5/public_html/pwa/index.html:80
+Stack trace:
+#0 /home1/thedesm5/public_html/pwa/index.html(80): file_get_contents('')
+#1 {main}
+  thrown in /home1/thedesm5/public_html/pwa/index.html on line 80
+[22-Feb-2022 17:55:13 America/Boise] PHP Warning:  Undefined array key "png_data" in /home1/thedesm5/public_html/pwa/index.html on line 80
+[22-Feb-2022 17:55:13 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home1/thedesm5/public_html/pwa/index.html on line 80
+[22-Feb-2022 17:55:13 America/Boise] PHP Fatal error:  Uncaught ValueError: Path cannot be empty in /home1/thedesm5/public_html/pwa/index.html:80
+Stack trace:
+#0 /home1/thedesm5/public_html/pwa/index.html(80): file_get_contents('')
+#1 {main}
+  thrown in /home1/thedesm5/public_html/pwa/index.html on line 80
+[26-Feb-2022 12:22:50 America/Boise] PHP Fatal error:  Uncaught ValueError: Path cannot be empty in /home1/thedesm5/public_html/pwa/index.html:86
+Stack trace:
+#0 /home1/thedesm5/public_html/pwa/index.html(86): file_get_contents('')
+#1 {main}
+  thrown in /home1/thedesm5/public_html/pwa/index.html on line 86
+[26-Feb-2022 12:22:57 America/Boise] PHP Fatal error:  Uncaught ValueError: Path cannot be empty in /home1/thedesm5/public_html/pwa/index.html:86
+Stack trace:
+#0 /home1/thedesm5/public_html/pwa/index.html(86): file_get_contents('')
+#1 {main}
+  thrown in /home1/thedesm5/public_html/pwa/index.html on line 86
+[26-Feb-2022 12:23:20 America/Boise] PHP Fatal error:  Uncaught ValueError: Path cannot be empty in /home1/thedesm5/public_html/pwa/index.html:86
+Stack trace:
+#0 /home1/thedesm5/public_html/pwa/index.html(86): file_get_contents('')
+#1 {main}
+  thrown in /home1/thedesm5/public_html/pwa/index.html on line 86
+[26-Feb-2022 15:30:20 America/Boise] PHP Parse error:  syntax error, unexpected token ";", expecting ")" in /home1/thedesm5/public_html/pwa/index.html on line 60
+[26-Feb-2022 15:31:59 America/Boise] PHP Warning:  Undefined array key "icon_png_twts" in /home1/thedesm5/public_html/pwa/index.html on line 75
+[26-Feb-2022 16:50:11 America/Boise] PHP Parse error:  syntax error, unexpected character 0x00, expecting end of file in /home1/thedesm5/public_html/pwa/index.html on line 59
+[26-Feb-2022 16:50:15 America/Boise] PHP Parse error:  syntax error, unexpected character 0x00, expecting end of file in /home1/thedesm5/public_html/pwa/index.html on line 59
+[26-Feb-2022 17:05:08 America/Boise] PHP Warning:  Undefined array key "icon_png_twt" in /home1/thedesm5/public_html/pwa/index.html on line 76
+[26-Feb-2022 17:05:59 America/Boise] PHP Warning:  Undefined array key "icon_png_twt" in /home1/thedesm5/public_html/pwa/index.html on line 75
+[26-Feb-2022 17:30:56 America/Boise] PHP Warning:  Undefined array key "png_name" in /home1/thedesm5/public_html/pwa/index.html on line 79
+[26-Feb-2022 17:30:56 America/Boise] PHP Warning:  Undefined array key "png_data" in /home1/thedesm5/public_html/pwa/index.html on line 80
+[26-Feb-2022 17:30:56 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home1/thedesm5/public_html/pwa/index.html on line 80
+[26-Feb-2022 17:30:56 America/Boise] PHP Fatal error:  Uncaught ValueError: Path cannot be empty in /home1/thedesm5/public_html/pwa/index.html:80
+Stack trace:
+#0 /home1/thedesm5/public_html/pwa/index.html(80): file_get_contents('')
+#1 {main}
+  thrown in /home1/thedesm5/public_html/pwa/index.html on line 80
+[27-Feb-2022 06:33:47 America/Boise] PHP Parse error:  Invalid body indentation level (expecting an indentation level of at least 8) in /home1/thedesm5/public_html/pwa/index.html on line 292
+[27-Feb-2022 09:13:11 America/Boise] PHP Warning:  Undefined array key "icon_png_twt" in /home1/thedesm5/public_html/pwa/index.html on line 77
+[27-Feb-2022 09:51:16 America/Boise] PHP Warning:  Undefined array key "icon_png_twts" in /home1/thedesm5/public_html/pwa/index.html on line 74
+[27-Feb-2022 09:51:20 America/Boise] PHP Warning:  Undefined array key "icon_png_twitter" in /home1/thedesm5/public_html/pwa/index.html on line 74
+[27-Feb-2022 09:51:43 America/Boise] PHP Warning:  Undefined array key "icon_png_opengraph" in /home1/thedesm5/public_html/pwa/index.html on line 74
+[27-Feb-2022 09:51:45 America/Boise] PHP Warning:  Undefined array key "icon_png_twitter" in /home1/thedesm5/public_html/pwa/index.html on line 74
+[27-Feb-2022 11:17:48 America/Boise] PHP Parse error:  syntax error, unexpected token "/", expecting end of file in /home1/thedesm5/public_html/pwa/index.html on line 60
+[27-Feb-2022 12:14:24 America/Boise] PHP Warning:  Undefined array key "svg_data" in /home1/thedesm5/public_html/pwa/index.html on line 84
+[27-Feb-2022 12:14:24 America/Boise] PHP Warning:  Trying to access array offset on value of type null in /home1/thedesm5/public_html/pwa/index.html on line 84
+[27-Feb-2022 12:14:24 America/Boise] PHP Fatal error:  Uncaught ValueError: Path cannot be empty in /home1/thedesm5/public_html/pwa/index.html:84
+Stack trace:
+#0 /home1/thedesm5/public_html/pwa/index.html(84): file_get_contents('')
+#1 {main}
+  thrown in /home1/thedesm5/public_html/pwa/index.html on line 84
+[27-Feb-2022 13:03:47 America/Boise] PHP Warning:  Undefined array key "icon_png_twitter" in /home1/thedesm5/public_html/pwa/index.html on line 74
+[27-Feb-2022 13:24:10 America/Boise] PHP Parse error:  syntax error, unexpected identifier "data", expecting ")" in /home1/thedesm5/public_html/pwa/index.html on line 82
+[27-Feb-2022 13:25:51 America/Boise] PHP Parse error:  syntax error, unexpected token ";", expecting ")" in /home1/thedesm5/public_html/pwa/index.html on line 82
+[27-Feb-2022 13:27:50 America/Boise] PHP Parse error:  syntax error, unexpected identifier "data", expecting ")" in /home1/thedesm5/public_html/pwa/index.html on line 82
+[27-Feb-2022 13:29:24 America/Boise] PHP Parse error:  syntax error, unexpected identifier "data", expecting ")" in /home1/thedesm5/public_html/pwa/index.html on line 82
+[27-Feb-2022 13:29:39 America/Boise] PHP Warning:  Undefined array key "icon_png_twitter" in /home1/thedesm5/public_html/pwa/index.html on line 75
+[27-Feb-2022 13:30:46 America/Boise] PHP Parse error:  syntax error, unexpected identifier "data", expecting ")" in /home1/thedesm5/public_html/pwa/index.html on line 82
+[27-Feb-2022 13:36:25 America/Boise] PHP Parse error:  Unclosed '(' does not match ']' in /home1/thedesm5/public_html/pwa/index.html on line 83
+[27-Feb-2022 13:36:49 America/Boise] PHP Parse error:  Unclosed '(' does not match ']' in /home1/thedesm5/public_html/pwa/index.html on line 83
+[27-Feb-2022 13:37:05 America/Boise] PHP Parse error:  Unclosed '(' does not match ']' in /home1/thedesm5/public_html/pwa/index.html on line 83
+[27-Feb-2022 13:37:39 America/Boise] PHP Parse error:  Unclosed '(' does not match ']' in /home1/thedesm5/public_html/pwa/index.html on line 83
+[27-Feb-2022 13:44:33 America/Boise] PHP Warning:  Undefined array key "icon_png_opengraph" in /home1/thedesm5/public_html/pwa/index.html on line 74
+[27-Feb-2022 13:44:47 America/Boise] PHP Warning:  Undefined array key "icon_png_opengraph" in /home1/thedesm5/public_html/pwa/index.html on line 74
+[27-Feb-2022 13:48:56 America/Boise] PHP Warning:  Undefined array key "icon_png_opengraph" in /home1/thedesm5/public_html/pwa/index.html on line 74
+[27-Feb-2022 20:50:03 America/Boise] PHP Warning:  Undefined array key "icon_png_opengraph" in /home1/thedesm5/public_html/pwa/index.html on line 74
+[05-Mar-2022 11:28:24 America/Boise] PHP Warning:  Undefined array key "icon_png_opengraph" in /home1/thedesm5/public_html/pwa/index.html on line 74
+[21-Mar-2022 20:20:34 America/Boise] PHP Warning:  Undefined array key "icon_png_opengraph/" in /home1/thedesm5/public_html/pwa/index.html on line 79
+[21-Mar-2022 20:20:43 America/Boise] PHP Warning:  Undefined array key "icon_png_opengraph/" in /home1/thedesm5/public_html/pwa/index.html on line 79
+[21-Mar-2022 20:24:36 America/Boise] PHP Warning:  Undefined array key "icon_png_opengraph" in /home1/thedesm5/public_html/pwa/index.html on line 74
+[25-Mar-2022 14:51:37 America/Boise] PHP Warning:  Undefined array key "icon_png_opengraph" in /home1/thedesm5/public_html/pwa/index.html on line 74
+[25-Mar-2022 14:51:44 America/Boise] PHP Warning:  Undefined array key "icon_png_opengraph" in /home1/thedesm5/public_html/pwa/index.html on line 74
+[06-Apr-2022 16:44:17 America/Boise] PHP Warning:  Undefined array key "icon_png_opengraph" in /home1/thedesm5/public_html/pwa/index.html on line 74
+[06-Apr-2022 16:44:23 America/Boise] PHP Warning:  Undefined array key "icon_png_opengraph" in /home1/thedesm5/public_html/pwa/index.html on line 74
+[06-Apr-2022 16:47:11 America/Boise] PHP Warning:  Undefined array key "icon_png_opengraph" in /home1/thedesm5/public_html/pwa/index.html on line 74
+[07-Apr-2022 01:30:31 America/Boise] PHP Warning:  Undefined array key "icon_png_opengraph" in /home1/thedesm5/public_html/pwa/index.html on line 74
+[09-Apr-2022 13:55:11 America/Boise] PHP Warning:  Undefined array key "icon_png_opengraph" in /home1/thedesm5/public_html/pwa/index.html on line 74
+[09-Apr-2022 16:13:29 America/Boise] PHP Warning:  Undefined array key "splash_png_1668x2388" in /home1/thedesm5/public_html/pwa/index.html on line 82
+[09-Apr-2022 16:13:53 America/Boise] PHP Warning:  Undefined array key "icon_png_opengraph" in /home1/thedesm5/public_html/pwa/index.html on line 82
+[15-Apr-2022 00:55:19 America/Boise] PHP Warning:  Undefined array key "splash_png_1668x2388." in /home1/thedesm5/public_html/pwa/index.html on line 119
+[15-Apr-2022 01:09:02 America/Boise] PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /home1/thedesm5/public_html/pwa/index.html on line 241
+[15-Apr-2022 01:09:02 America/Boise] PHP Warning:  preg_replace(): No ending delimiter '^' found in /home1/thedesm5/public_html/pwa/index.html on line 241
+[15-Apr-2022 01:10:51 America/Boise] PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /home1/thedesm5/public_html/pwa/index.html on line 241
+[15-Apr-2022 01:10:51 America/Boise] PHP Warning:  preg_replace(): No ending delimiter '^' found in /home1/thedesm5/public_html/pwa/index.html on line 241
+[15-Apr-2022 01:15:52 America/Boise] PHP Warning:  preg_replace(): Delimiter must not be alphanumeric or backslash in /home1/thedesm5/public_html/pwa/index.html on line 241
+[15-Apr-2022 01:15:52 America/Boise] PHP Warning:  preg_replace(): No ending delimiter '^' found in /home1/thedesm5/public_html/pwa/index.html on line 241
+[15-Apr-2022 01:17:26 America/Boise] PHP Parse error:  syntax error, unexpected token "echo" in /home1/thedesm5/public_html/pwa/index.html on line 241
+[15-Apr-2022 01:17:29 America/Boise] PHP Parse error:  syntax error, unexpected token "echo" in /home1/thedesm5/public_html/pwa/index.html on line 241
